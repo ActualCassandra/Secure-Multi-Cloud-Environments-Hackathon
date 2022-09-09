@@ -19,6 +19,8 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
 
 ## Day Two
 1. Defender for Cloud Basics
+   - Overerview
+   - Planning your Defender for Cloud Deployment
 
 2. Defender for Cloud CSPM
    - Can we show SSO or AAD identity usage during setup here?

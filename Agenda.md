@@ -5,8 +5,9 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
 
 1. AWS
    - https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-ad-security
+   - [Multi-cloud security and identity with Azure and Amazon web services (AWS)](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/security-identity)
+   - [Tutorial: Azure AD SSO integration with AWS Single-Account Access](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial)
    - https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-security-solutions
-   -
 2. GCP
    - https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial
  
@@ -61,6 +62,7 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
 # Outstanding Questions and Decisions
  - Have each session switch between cloud providers? First one AWS, second GCP, etc.? Then have stretch goals to do activities in both 
  - Start straight with identity or talk about getting the basics of MDfC and AAD first before connecting up AWS and GCP for SSO?
+ - Add automation with logic apps at the end of CWP session? *How do we automate in multi-cloud for EDR?*
  - Cover landing zones at all?
  - Defender for Cloud Apps? Requires additional licensing or special CDX tenant
  - Defender EASM? Wait for Defender for Cloud integration as it is in rapid development?
@@ -71,7 +73,7 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
 # Stetch goals
  - Same activities, but in GCP
  - Azure Lighthouse? Might be too much for this, so just have  some knowledge point about it
- - Automation with Azure automation?
+ - Automation with Azure automation? for deployng Defender for servers?
  - Defender for SQL
    - Microsoft Defender for Cloud PoC Series - Microsoft Defender for SQL
  - Azure Key Vault + Azure Arc with non-Azure servers

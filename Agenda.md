@@ -33,7 +33,6 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
    - Azure Arc Basics
    - https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/day2/arc_defender/#connect-azure-arc-enabled-servers-to-microsoft-defender-for-cloud
    - Script to auto-onboard AWS servers into Azure Arc
-
 4.  Defender for Cloud CWP
     - [Defender for Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) Details are further down under the connector
       - [Microsoft Defender for Cloud PoC Series - Defender for Servers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-poc-series-defender-for-servers/ba-p/2767508)
@@ -44,16 +43,18 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
     - [Enabling Defender for Containers - MS Docs Link](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api&pivots=defender-for-container-eks)
     - [How Defender for Containers protects your clusters](https://guillaumeben.xyz/defender-containers.html)
     - Install Kubernetes Goat https://madhuakula.com/kubernetes-goat/docs/
+    - Find the various alerts in the portal and discuss
+      - [Container Security Mapping Dashboard](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/containers-security-mapping-dashboard/ba-p/3601580)
 
 5. JIT with AWS
    - https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview?tabs=defender-for-container-arch-eks#what-permissions-are-needed-to-configure-and-use-jit (unified AAD and MDfC)
 
 ## Day Three
-1.  Permissions Management
+1.  Entra Permissions Management (EPM)
     - https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws
     - https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp
-    - Defender for Cloud Integration
-      - Permission Creep Index in MDfC
+    - [Defender for Cloud Integration with EPM[(https://www.youtube.com/watch?v=dasixjOOldk)
+      - [Permission Creep Index in MDfC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
  
 2. Microsoft Sentinel?
    - Overview

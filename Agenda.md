@@ -36,24 +36,24 @@ Baseline Azure setup + Defender for Cloud? *Or* Start straight with identity and
 
 4.  Defender for Cloud CWP
     - [Defender for Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) Details are further down under the connector
-      - Link to 'Microsoft Defender for Cloud PoC Series - Defender for Servers'
-      - https://www.youtube.com/watch?v=62_Cj6yseno
-    - [Defender for Containers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api&pivots=defender-for-container-eks)
+      - [Microsoft Defender for Cloud PoC Series - Defender for Servers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-poc-series-defender-for-servers/ba-p/2767508)
       - Find the server in the Security.microsoft.com portal
-        - Generate test alerts on server in MDE 'Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint' -> Send a test alert
-    - Link to 'Alert validation in Microsoft Defender for Cloud'
-
+        - [Generate test alerts on server in MDE](https://docs.microsoft.com/en-us/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#send-a-test-alert)
+        - [Alert validation in Microsoft Defender for Cloud-Create Sample alerts](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alert-validation#generate-sample-security-alerts)
+    - [YouTube Video - Demo Defender for Containers in a multi-cloud](https://www.youtube.com/watch?v=62_Cj6yseno)
+    - [Enabling Defender for Containers - MS Docs Link](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api&pivots=defender-for-container-eks)
+    - [How Defender for Containers protects your clusters](https://guillaumeben.xyz/defender-containers.html)
+    - Install Kubernetes Goat https://madhuakula.com/kubernetes-goat/docs/
 
 5. JIT with AWS
    - https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview?tabs=defender-for-container-arch-eks#what-permissions-are-needed-to-configure-and-use-jit (unified AAD and MDfC)
-
-
 
 ## Day Three
 1.  Permissions Management
     - https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws
     - https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp
-    - Permission Creep Index in MDfC
+    - Defender for Cloud Integration
+      - Permission Creep Index in MDfC
  
 2. Microsoft Sentinel?
    - Overview

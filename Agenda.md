@@ -20,7 +20,7 @@
 ## Session Two: Azure Arc and Microsoft Defender for Cloud
 1. Defender for Cloud Basics
    - Overview
-   - Planning your Defender for Cloud Deployment
+   - [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)
    - Enable and Configure Defender for Cloud (Initial Environment settings blade in Azure)
 
 2. Defender for Cloud CSPM
@@ -28,7 +28,7 @@
    - [Connect to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
    - [Connect to GCP](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp) (perhaps just show one or the other in the hack as it will require a lot of effort. Or have as an extra option for those who want to do it?)
    - [Custom Standards and Assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/custom-assessments-and-standards-in-microsoft-defender-for-cloud/ba-p/3066575)
-   - Setting up governance in Defender for Cloud
+   - [Setting up governance in Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/governance-rules)
 
 3. Azure Arc+Defender for Cloud
    - Azure Arc Basics
@@ -89,6 +89,7 @@
   - MDfC Workload Protection / enhanced security enabled, Trial at a minimum
   - Entra Permissions Management or Trial
   - *Once there is MDfC Integration: MD EASM or Trial*
+  - Mobile phone with Microsoft Authenticator App
 
  # Skill Requirements
   - Familiar with Defender for Cloud

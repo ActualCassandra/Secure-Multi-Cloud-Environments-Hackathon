@@ -10,7 +10,7 @@ Proposed agenda for the hack.
  - [AAD IAM for AWS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
  - [Multi-cloud security and identity with Azure and Amazon web services (AWS)](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/security-identity)
  - [Tutorial: Azure AD SSO integration with AWS Single-Account Access](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial)
-
+ - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations)
 ### 3. Integrating Google Cloud Platform (GCP) with AAD
  - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial)
  
@@ -80,7 +80,7 @@ Proposed agenda for the hack.
 ## Stetch goals
  - Same activities, but in GCP
  - Azure Lighthouse? Might be too much for this, so just have  some knowledge point about it
- - Automation with Azure automation? for deployng Defender for servers?
+ - Automation with Azure automation? for deploying Defender for servers?
  - Defender for SQL
    - Microsoft Defender for Cloud PoC Series - Microsoft Defender for SQL
  - Azure Key Vault + Azure Arc with non-Azure servers
@@ -110,3 +110,9 @@ Proposed agenda for the hack.
 
 ## Future Content / Topics
  - Defender EASM once there is MDfC integration
+ - Defender for Storage for AWS once it is in public preview
+
+## Other sites with labs to build upon/leverage
+> #### [MDC Enterprise Onboarding](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Onboarding)
+> #### [MDC Official Github Labs](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Labs)
+> #### [Azure Arc Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/day2/arc_defender/#connect-azure-arc-enabled-servers-to-microsoft-defender-for-cloud)

@@ -1,22 +1,28 @@
 # Agenda for the Hack
 Proposed agenda for the hack.
 
-## Session One: Using Azure AD in multi-cloud environments
+## Session One: Securing Identities in multi-cloud environments
 ### 1. Azure Active Directory (AAD)
  - Overview
- - Preparing your AAD tenant
+ - Preparing your AAD tenant `[LAB]`
 ### 2. Integrating Amazon Web Services (AWS) with AAD
  - [Deploying Microsoft security solutions in AWS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-security-solutions)
  - [AAD IAM for AWS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
  - [Multi-cloud security and identity with Azure and Amazon web services (AWS)](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/security-identity)
  - [Tutorial: Azure AD SSO integration with AWS Single-Account Access](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial)
- - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations)
+ - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations) `[LAB]`
 ### 3. Integrating Google Cloud Platform (GCP) with AAD
- - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial)
+ - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial) `[LAB]`
  
 ### 4. General
  - SSO: cloud platforms + show MFA
  - SSO: VMs
+
+### 6.  Entra Permissions Management (EPM)
+ - Overview
+ - [Onboarding AWS into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws) `[LAB]`
+ - [Onboarding GCP into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp) `[LAB]`
+ - [Just in Time Access in Azure](LINK) `[LAB]`
 
 ## Session Two: Azure Arc and Microsoft Defender for Cloud
 ### 1. Defender for Cloud Basics
@@ -28,6 +34,8 @@ Proposed agenda for the hack.
   - Azure AD SSO during connector setup
  - [Connect to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
  - [Connect to GCP](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp) (perhaps just show one or the other in the hack as it will require a lot of effort. Or have as an extra option for those who want to do it?)
+ - [Defender for Cloud Integration with EPM](https://www.youtube.com/watch?v=dasixjOOldk)
+   - [Permission Creep Index in MDfC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
  - [Custom Standards and Assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/custom-assessments-and-standards-in-microsoft-defender-for-cloud/ba-p/3066575)
  - [Setting up governance in Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/governance-rules)
 
@@ -55,13 +63,8 @@ Proposed agenda for the hack.
 ### 5. JIT with AWS
  - [How to configure and use JIT with AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview?tabs=defender-for-container-arch-eks#what-permissions-are-needed-to-configure-and-use-jit) (unifies AAD and MDfC topics)
 
-## Session Three: Entra Permissions Management and Microsoft Sentinel
-### 1.  Entra Permissions Management (EPM)
- - [Onboarding AWS into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
- - [Onboarding GCP into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp)
- - [Defender for Cloud Integration with EPM](https://www.youtube.com/watch?v=dasixjOOldk)
-   - [Permission Creep Index in MDfC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
- 
+## Session Three: Multi-Cloud Automation and Threat Protection
+### 1. Automation
 ### 2. Microsoft Sentinel
  - Overview
  - Connecting up the various data sources used in the hack
@@ -113,6 +116,6 @@ Proposed agenda for the hack.
  - Defender for Storage for AWS once it is in public preview
 
 ## Other sites with labs to build upon/leverage
-> #### [MDC Enterprise Onboarding](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Onboarding)
-> #### [MDC Official Github Labs](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Labs)
-> #### [Azure Arc Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/day2/arc_defender/#connect-azure-arc-enabled-servers-to-microsoft-defender-for-cloud)
+ - > #### [MDC Enterprise Onboarding](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Onboarding)
+ - > #### [MDC Official Github Labs](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Labs)
+ - > #### [Azure Arc Jumpstart](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/day2/arc_defender/#connect-azure-arc-enabled-servers-to-microsoft-defender-for-cloud)

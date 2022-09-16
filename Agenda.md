@@ -12,7 +12,7 @@ Proposed agenda for the hack.
  - [Tutorial: Azure AD SSO integration with AWS Single-Account Access](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial)
  - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations) `[LAB]`
 ### 3. Integrating Google Cloud Platform (GCP) with AAD
- - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial) `[LAB]`
+ - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial) `[LAB]` `[STRETCH GOAL]`
  
 ### 4. General
  - SSO: cloud platforms + show MFA
@@ -32,8 +32,8 @@ Proposed agenda for the hack.
 
 ### 2. Multi-Cloud Security Posture Management with Defender for Cloud
   - Azure AD SSO during connector setup
- - [Connect to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
- - [Connect to GCP](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp) (perhaps just show one or the other in the hack as it will require a lot of effort. Or have as an extra option for those who want to do it?)
+ - [Connect to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws) `[LAB]`
+ - [Connect to GCP](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp) `[STRETCH GOAL]`
  - [Defender for Cloud Integration with EPM](https://www.youtube.com/watch?v=dasixjOOldk)
    - [Permission Creep Index in MDfC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
  - [Custom Standards and Assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/custom-assessments-and-standards-in-microsoft-defender-for-cloud/ba-p/3066575)
@@ -46,31 +46,36 @@ Proposed agenda for the hack.
    - [Azure Arc Jumpstart Method](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_arc_servers/day2/arc_defender/#connect-azure-arc-enabled-servers-to-microsoft-defender-for-cloud)
  - Script to auto-onboard AWS servers into Azure Arc
 ### 4. Detect threats and protect your multi-cloud workloads with Defender for Cloud
- - [Defender for Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+ - [Defender for Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction) `[LAB]`
    - [AWS Connector](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) Details are further down under the connector
    - [Microsoft Defender for Cloud PoC Series - Defender for Servers](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-poc-series-defender-for-servers/ba-p/2767508)
    - Find the server in the Security.microsoft.com portal
    - [Generate test alerts on server in MDE](https://docs.microsoft.com/en-us/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#send-a-test-alert)
    - [Alert validation in Microsoft Defender for Cloud-Create Sample alerts](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alert-validation#generate-sample-security-alerts)
- - Defender for Containers
+ - [Defender for Containers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-introduction) `[STRETCH GOAL]`
    - [YouTube Video - Demo Defender for Containers in a multi-cloud](https://www.youtube.com/watch?v=62_Cj6yseno)
    - [Enabling Defender for Containers - MS Docs Link](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-enable?tabs=aks-deploy-portal%2Ck8s-deploy-asc%2Ck8s-verify-asc%2Ck8s-remove-arc%2Caks-removeprofile-api&pivots=defender-for-container-eks)
    - [How Defender for Containers protects your clusters](https://guillaumeben.xyz/defender-containers.html)
    - [Install Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs/)
    - Find the various alerts in the portal and discuss
    - [Container Security Mapping Dashboard](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/containers-security-mapping-dashboard/ba-p/3601580)
+ - [Defender for Databases]() `[STRETCH GOAL]`
+   - [AWS Connector Settings](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites)
+   - Defender for SQL
 
 ### 5. JIT with AWS
  - [How to configure and use JIT with AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview?tabs=defender-for-container-arch-eks#what-permissions-are-needed-to-configure-and-use-jit) (unifies AAD and MDfC topics)
 
 ## Session Three: Multi-Cloud Automation and Threat Protection
 ### 1. Automation
+ - Automating deployments at scale (which topics? e.g. https://www.youtube.com/watch?v=o9wHIS_QLJE&t=2122s)
+ - XDR? (e.g.https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
 ### 2. Microsoft Sentinel
  - Overview
- - Connecting up the various data sources used in the hack
+ - Connecting up the various data sources used in the hack `[LAB]`
    - [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
    - [Azure AD](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)
-   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3), too
+   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) `[STRETCH GOAL]`
  - Sample multi-cloud KQL queries
 
 ## Outstanding Questions and Decisions
@@ -79,6 +84,7 @@ Proposed agenda for the hack.
  - Cover landing zones at all?
  - Defender for Cloud Apps? Requires additional licensing or special CDX tenant
  - How to handle Entra Permissions Management trial in the hack? 
+ - Talk about agents (AMA/MMA/etc) and extensions and which one does what and when to use?
 
 ## Stetch goals
  - Same activities, but in GCP

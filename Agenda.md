@@ -75,7 +75,7 @@ Proposed agenda for the hack.
  - Connecting up the various data sources used in the hack `[LAB]`
    - [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
    - [Azure AD](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)
-   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) `[STRETCH GOAL]`
+   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)]()
  - Sample multi-cloud KQL queries
 
 ## Outstanding Questions and Decisions

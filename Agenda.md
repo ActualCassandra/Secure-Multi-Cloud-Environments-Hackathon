@@ -75,7 +75,7 @@ Proposed agenda for the hack.
  - Connecting up the various data sources used in the hack `[LAB]`
    - [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
    - [Azure AD](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)
-   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)]()
+   - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stetch-goals)
  - Sample multi-cloud KQL queries
 
 ## Outstanding Questions and Decisions
@@ -87,6 +87,7 @@ Proposed agenda for the hack.
  - Talk about agents (AMA/MMA/etc) and extensions and which one does what and when to use?
 
 ## Stetch goals
+Additional activities agendees can carry out once the main lab(s) have been finished.
  - Same activities, but in GCP
  - Azure Lighthouse? Might be too much for this, so just have  some knowledge point about it
  - Automation with Azure automation? for deploying Defender for servers?

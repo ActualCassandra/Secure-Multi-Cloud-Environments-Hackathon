@@ -66,7 +66,7 @@ Proposed agenda for the hack.
 ### 5. JIT with AWS
  - [How to configure and use JIT with AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview?tabs=defender-for-container-arch-eks#what-permissions-are-needed-to-configure-and-use-jit) (unifies AAD and MDfC topics)
 
-## Session Three: Multi-Cloud Automation and Threat Protection
+## Session Three: Multi-Cloud Automation, Detection, and Response
 ### 1. Automation
  - Automating deployments at scale (which topics? e.g. https://www.youtube.com/watch?v=o9wHIS_QLJE&t=2122s)
  - XDR? (e.g.https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)

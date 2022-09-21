@@ -24,7 +24,7 @@ This hack will cover the following topics:
 2. Protecting multi-cloud resources with Defender for Cloud and Azure Arc
 3. Multi-cloud automation, detection, and response
 
-## High-Level Topics
+## The basics
 This hack will cover the technologies below and a basic understanding is required.
  - [Azure Active Directory](https://learn.microsoft.com/en-gb/azure/active-directory/fundamentals/active-directory-whatis)
  - [Entra Permissions Management](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/overview)

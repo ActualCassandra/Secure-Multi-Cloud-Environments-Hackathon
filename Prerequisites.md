@@ -3,7 +3,7 @@ Please go through this list of prerequisites before attending one of our multi-c
 
 ## Tenants
 Depending on the specific hack, you will need to have access to tenants in:
- - [Azure](https://azure.microsoft.com/en-gb/free/), plus
+ - [Microsoft Azure](https://azure.microsoft.com/en-gb/free/), plus
  - [Amazon Web Services (AWS)](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) or
  - [Google Cloud Platform (GCP)](https://cloud.google.com/blog/products/gcp/getting-started-with-google-cloud-for-free)
  

@@ -1,4 +1,4 @@
-# Secure-Multi-Cloud-Environments-Hack
+# Secure-Multi-Cloud-Environments-Hackathon
 Repository for the Microsoft Secure Multi-Cloud Environments Hackathon.
 
 Over three days you'll learn how to leverage Microsoft security technologies to secure your customer's multi-cloud environments. Each day will have presentations on the topics as well as hands-on labs for you to work through in a group with a Microsoft proctor.

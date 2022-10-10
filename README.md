@@ -1,13 +1,14 @@
 # Secure-Multi-Cloud-Environments-Hackathon
 Repository for the Microsoft Secure Multi-Cloud Environments Hackathon.
 
-Over three days you'll learn how to leverage Microsoft security technologies to secure your customer's multi-cloud environments. Each day will have presentations on the topics as well as hands-on labs for you to work through in a group with a Microsoft proctor.
+This three-day, hands-on hackathon is designed for partners who want to expand the scope of their managed security services beyond Azure. You'll learn how to leverage Microsoft security technologies and services to secure your customer's multi-cloud environments. Each day will have topical presentations and demos as well as hands-on labs for you to work through in a group with a Microsoft proctor.
 
+:warning:*Partners should have teams of 2-6 people, and your registrations will be reviewed to prioritise partners who have an existing manged security service and wish to expand, and ideally have some hands-on experience. You'll need access to both an Azure and AWS tenant (free tier or trial).  Presentations will take place in the general channel where your personal data (email and name) will be visible to other attendees.*
 
 ## High-level Agenda
- - [Day 1:](/Day1.md) Control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud by leveraging Azure Arc, as well as onboarding into Entra Permissions Management
- - [Day 2:](/Day2.md) We'll delve deeper into Defender for Cloud's multi-cloud capabilities as well as its integration with Entra Permissions Management
- - [Day 3:](/Day3.md) You'll learn about multi-cloud automation, detection, and response and bring it all together into Microsoft Sentinel.
+ - [Day 1:](/Day1.md) You will start the hackathon by learning how to control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud leveraging Azure Arc.
+ - [Day 2:](/Day2.md) You will delve deeper into Defender for Cloud's multi-cloud capabilities as well as its integration with Entra Permissions Management.
+ - [Day 3:](/Day3.md) Finally, you will learn about multi-cloud automation, detection, and response and bring it all together into Microsoft Sentinel.
 
 ### W-I-P
 Work-in-progress detailed [Agenda here](Agenda.md).

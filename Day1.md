@@ -12,5 +12,5 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our Imbro
 | 1230-1330 | Integrating AWS with AAD
 | 1330-1400 | Entra Permissions Management (EPM) Overview
 | 1330-1400 | Onboarding AWS into EPM
-| 1430-1500 | Just-in-Time (JIT) access with EPM
+| 1430-1500 | Permissions on Demand with EPM (move to day 2?)
 ... more

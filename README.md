@@ -5,12 +5,12 @@ Over three days you'll learn how to leverage Microsoft security technologies to 
 
 
 ## High-level Agenda
- - [Day 1:](/Day1.md) Control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud leveraging Azure Arc.
+ - [Day 1:](/Day1.md) Control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud by leveraging Azure Arc, as well as onboarding into Entra Permissions Management
  - [Day 2:](/Day2.md) We'll delve deeper into Defender for Cloud's multi-cloud capabilities as well as its integration with Entra Permissions Management
  - [Day 3:](/Day3.md) You'll learn about multi-cloud automation, detection, and response and bring it all together into Microsoft Sentinel.
 
 ### W-I-P
-Work-in progress detailed [Agenda here](Agenda.md).
+Work-in-progress detailed [Agenda here](Agenda.md).
 
 ## Precursor events to this hack
 This hack builds upon the previous Securing Multivendor Clouds Series and the Defender for Cloud Masterclass partner events. The content for these is stil available:

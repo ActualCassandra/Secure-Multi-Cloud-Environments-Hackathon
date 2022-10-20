@@ -24,8 +24,8 @@ Proposed agenda for the hack.
  - [Onboarding AWS into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws) `[LAB]`
  - [Onboarding GCP into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp) `[LAB]` `[STRETCH GOAL]`
  - User Management in EPM (so that people aren't using a GA account for the risk assessment) - little walkthrough lab
- - [Using EPM for multi-cloud PoD](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/faqs#what-is-the-difference-between-permissions-on-demand-and-just-in-time-access) `[LAB]`
-
+ - [Using EPM for multi-cloud Permissions on Demand](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/faqs#what-is-the-difference-between-permissions-on-demand-and-just-in-time-access) `[LAB]`
+   - CONSIDER MOVING TO NEXT DAY
 ## Session Two: Azure Arc and Microsoft Defender for Cloud
 ### 1. Defender for Cloud Basics
  - Overview

@@ -70,11 +70,15 @@ Proposed agenda for the hack.
 
 ## Session Three: Multi-Cloud Automation, Detection, and Response
 ### 1. Automation
- - Automating deployments at scale (which topics? e.g. https://www.youtube.com/watch?v=o9wHIS_QLJE&t=2122s)
+ - Automating MDC deployments at scale (which topics? e.g. https://www.youtube.com/watch?v=o9wHIS_QLJE&t=2122s)
  - XDR? (e.g.https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
+   - MDE isolation?
+   - AWS API security group?
+   - More?
 ### 2. Microsoft Sentinel
  - Overview
  - Connecting up the various data sources used in the hack `[LAB]`
+   - EPM - Getting EPM alert email into sentinel and creating an alert from the email using a logic app.
    - [Microsoft Defender for Cloud](https://docs.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
    - [Azure AD](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)
    - [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stetch-goals)

@@ -20,9 +20,11 @@ Proposed agenda for the hack.
 
 ### 6.  Entra Permissions Management (EPM)
  - Overview
+ - Enable Trial (pre-req so should already be done)
  - [Onboarding AWS into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws) `[LAB]`
- - [Onboarding GCP into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp) `[LAB]`
- - [Using EPM for multi-cloud JIT](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/faqs#what-is-the-difference-between-permissions-on-demand-and-just-in-time-access) `[LAB]`
+ - [Onboarding GCP into EPM](https://docs.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-gcp) `[LAB]` `[STRETCH GOAL]`
+ - User Management in EPM (so that people aren't using a GA account for the risk assessment) - little walkthrough lab
+ - [Using EPM for multi-cloud PoD](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/faqs#what-is-the-difference-between-permissions-on-demand-and-just-in-time-access) `[LAB]`
 
 ## Session Two: Azure Arc and Microsoft Defender for Cloud
 ### 1. Defender for Cloud Basics

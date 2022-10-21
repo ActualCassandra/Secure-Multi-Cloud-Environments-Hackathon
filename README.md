@@ -1,14 +1,19 @@
 # Secure-Multi-Cloud-Environments-Hackathon
 Repository for the Microsoft Secure Multi-Cloud Environments Hackathon.
 
-This three-day, hands-on hackathon is designed for partners who want to expand the scope of their managed security services beyond Azure. You'll learn how to leverage Microsoft security technologies and services to secure your customer's multi-cloud environments. Each day will have topical presentations and demos as well as hands-on labs for you to work through in a group with a Microsoft proctor.
+## Event overview
+This three-day, hands-on hackathon is designed for partners who want to expand the scope of their managed security services beyond Azure. You'll learn how to 
+leverage Microsoft security technologies and services to secure your customer's multi-cloud environments. Each day will have topical presentations and demos as well as hands-on labs for you to work through in a group with a Microsoft proctor.
 
 :warning:*Partners should have teams of 2-6 people, and your registrations will be reviewed to prioritise partners who have an existing manged security service and wish to expand, and ideally have some hands-on experience. You'll need access to both an Azure and AWS tenant (free tier or trial).  Presentations will take place in the general channel where your personal data (email and name) will be visible to other attendees.*
 
 ## High-level Agenda
  - [Day 1:](/Day1.md) You will start the hackathon by learning how to control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud leveraging Azure Arc.
- - [Day 2:](/Day2.md) You will delve deeper into Defender for Cloud's multi-cloud capabilities as well as its integration with Entra Permissions Management.
+ - [Day 2:](/Day2.md) You will delve deeper into how to use both Defender for Cloud and Entra Permissions Management to secure your customer's multi-cloud environments.
  - [Day 3:](/Day3.md) Finally, you will learn about multi-cloud automation, detection, and response and bring it all together into Microsoft Sentinel.
+
+## Event Registration
+The first running of this event will take place on 12-15 December 2022 via Microsoft Teams, register [here](https://aka.ms/MultiCloudSecurityHackathon-Regp).
 
 ### W-I-P
 Work-in-progress detailed [Agenda here](Agenda.md).

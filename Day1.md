@@ -4,13 +4,19 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our Imbro
 ## Agenda
 | **Time** | **Description**
 | :--- | :---
-| 0930-0945 | Welcome and Housekeeping
-| 0945-1030 | Azure AD (AAD) Overview
-| 1030-1100 | Securing Azure Landing Zones
-| 1100-1200 | Preparing your AAD tenant
-| 1200-1230 | Lunch
-| 1230-1330 | Integrating AWS with AAD
-| 1330-1400 | Entra Permissions Management (EPM) Overview
-| 1330-1400 | Onboarding AWS into EPM
-| 1430-1500 | Permissions on Demand with EPM (move to day 2?)
-... more
+| 0930 | Welcome and Housekeeping
+| 0945 | Azure AD (AAD)'s multi-cloud features
+| 1100 | [LAB] Preparing your AAD tenant
+| 1230 | [LAB] Integrating AWS with AAD
+| 1200 | Lunch
+| 1330 | Entra Permissions Management (EPM) Overview
+| 1330 | [LAB] Onboarding AWS into EPM
+| 1330 | [LAB] Planning your MDC deployment
+| 1430 | [LAB] Enrolling AWS sertvers into MDC
+| 1430 | Within your group - present to proctor
+| 1600 | Q&A, Discussion around partner challenges
+
+## Scenario
+[Background information on the hackathon scenario](Scenario.md)
+
+## Day 1 Challenge

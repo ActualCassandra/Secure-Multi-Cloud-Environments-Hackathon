@@ -95,6 +95,7 @@ Proposed agenda for the hack.
 ## Stetch goals
 Additional activities agendees can carry out once the main lab(s) have been finished.
  - Same activities, but in GCP
+ - On-prem Hyper-V or similar server for defender for servers via Arc
  - Azure Lighthouse? Might be too much for this, so just have  some knowledge point about it
  - Automation with Azure automation? for deploying Defender for servers?
  - Defender for SQL

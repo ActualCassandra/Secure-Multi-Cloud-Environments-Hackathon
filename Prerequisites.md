@@ -33,6 +33,7 @@ You will have to ensure you have enabled the following services, trial or otherw
    - The virtual machine needs to have AWS Systems Manager (SSM) agent installed, [choose an AMI which comes with it](https://docs.aws.amazon.com/systems-manager/latest/userguide/ami-preinstalled-agent.html), or [install manually](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-managed-win.html).
    - Verify that the pre-requisites have not changed at this Microsoft Docs link - [AWS virtual machine pre-requisites: Scroll down to 'To enable the Defender for Servers plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites)
  - [Virtual machine requirements for Defender for Servers](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide#hardware-and-software-requirements)
+ - DO NOT UPDATE THE OPERATING SYSTEM
 
 **Containers**
 

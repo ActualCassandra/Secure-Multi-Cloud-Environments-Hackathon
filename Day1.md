@@ -5,7 +5,7 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our Imbro
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome and Housekeeping
-| 0945 | Azure AD (AAD)'s multi-cloud features
+| 0945 | Azure AD for Single Sign-on with AWS
 | 1100 | `[LAB]` Preparing your AAD tenant
 | 1130 | `[LAB]` Integrating AWS with AAD
 | 1200 | Lunch

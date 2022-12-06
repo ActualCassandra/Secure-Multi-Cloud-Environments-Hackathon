@@ -199,8 +199,8 @@ This will add tags to identities and resources that are attested. It will exclud
 2. Select the ellipsis (...) next to the identity or resource.
 ![Excluding tags screenshot](images/EPM-exclude-tags.png)
 3. Select Tags
-4. Select the 'ck_exclude_from_pci' tag to exclude the entity from affecting the Permissions Creep Index score for that authorization system.
-5. Select the 'ck_exclude_from_reports' tag to exclude the entity from being reported as a risk in generated reports. 
+4. Select the 'ck_exclude_from_pci' tag to exclude the entity from affecting the Permissions Creep Index score for that authorization system. You can leave the Value empty.
+5. Select the 'ck_exclude_from_reports' tag to exclude the entity from being reported as a risk in generated reports. You can leave the Value empty.
 6. Select Save
 
 ## Procedure: Review publicly accessible resources

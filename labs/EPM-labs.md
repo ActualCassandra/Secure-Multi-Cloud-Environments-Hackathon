@@ -119,3 +119,155 @@ This will provide Just In Time access for the requested identity to have the sel
 12. Click Submit
 
 ## Procedure: Set up Alerts
+1. Navigate to Alerts > The bell icon at the top right of the window. 
+![Alerts Screenshot](images/EPM-alerts.png)
+2. Select the Alert type: Activity, Rule-Based Anomaly, Statistical Anomaly, or Permission Analytics
+
+### Activity Alerts
+Create custom alerts for actions or sensitive resources.
+1. Click Create Activity Trigger
+2. Enter a name for the alert
+3. Choose the authorisation system type the alert will apply to.
+4. Choose the authorisation system, then build a query based on the actions or resources that will be monitored.
+
+
+### Statistical anomalies
+Detect outliers in an identity's behaviour such as unusual access patterns.
+1. Select Create Anomaly Trigger
+2. Enter a name for the alert
+3. Choose the authorisation system type the alert will apply to.
+4. Select the trigger, click Next
+5. Select the authorisation systems the alert will apply to, then click Save
+
+### Rule-Based Anomaly Alert
+Anomalies that identify activity that is unusual based on rules like first time access of a task. 
+
+1. Select Create Anomaly Trigger
+2. Enter a name for the alert
+3. Choose the authorisation system type the alert will apply to.
+4. Select the trigger, click Next
+5. Select the authorisation systems the alert will apply to.
+6. Choose the Configuration tab and set the time interval for the rule, then click Save
+
+### Permissions analytics alerts
+Alert to all of the risks identified in the PAR. So after you have baselined your environment, if you have a new over-permissioned user you can be alerted.
+1. Select Create Anomaly Trigger
+2. Enter a name for the alert
+3. Choose the authorisation system type the alert will apply to.
+4. Select the trigger, click Next
+5. Select the authorisation systems the alert will apply to, then click Save
+
+## Procedure: Create a custom role/policy
+This will create a new custom role based on the actual usage. 
+The role will be available in the Azure/GCP portal immediately after creation. The change will be reflected by EPM within 4 hours, unless you trigger the data collection sooner.
+1. Navigate to Remediation > Roles/Policies > Create Role:
+2. Select the Authorization System Type (Azure or GCP) and an Authorization System (subscription or project)
+3. Select what activity to base the role creation on:
+   - User(s), Group(s), App(s)
+   - Existing role (skip to step 7)
+   - New role (skip to step 7)
+4. Select the time period of tasks to include: 90 days, 60 days, 30 days, 7 days, 1 day.
+5. Select or deselect if Read Actions and ReadOnly tasks should be included.
+6. Select the users/groups/apps to base the role creation on.
+7. Next
+8. Enter a name for the new Role
+9. Add or remove to the Selected Tasks as required. The tasks that have been automatically selected are based on actual activity. Select Next.
+10. Review the tasks that will be assigned to the new role. 
+11. Submit to create the role, or download the JSON and script to run directly in the portal.
+
+## AWS
+This will create a new custom policy based on the actual usage. 
+The policy will be available in the AWS portal immediately.  The change will be reflected by EPM within 4 hours, unless you trigger the data collection sooner.
+1. Navigate to Remediation > Roles/Policies > Create Role:
+2. Select the Authorization System Type (AWS) and an Authorization System (Account ID)
+3. Select what activity to base the role creation on:
+   - User(s), Group(s), Resource(s), Role, Tag(s), Lambda Function
+   - Existing Role (skip to step 7)
+   - New Policy (skip to step 7)
+4. Select the time period of tasks to include: 90 days, 60 days, 30 days, 7 days, 1 day.
+5. Select or deselect if Access Advisor data should be included.
+6. Select the users/groups/resources/role/tags/lambda function to base the policy creation on.
+7. Next
+8. Add or remove to the Selected Tasks as required. The tasks that have been automatically selected are based on actual activity. Select Next.
+9. Enter a name for the new Policy. 
+10. Review the tasks that will be assigned to the new policy. Select Next.
+11. Submit to create the policy, or download the JSON and script to run directly in the portal.
+
+## Procedure: Tag resources (to exclude from report or PCI)
+This will add tags to identities and resources that are attested. It will exclude the tagged entity from the Permissions Creep Index score and/or the Permissions Analytics Report.
+1. Navigate to the Identity or Resource that is attested. This can be through Analytics or through the Permissions Analytics Report. 
+2. Select the ellipsis (...) next to the identity or resource.
+![Excluding tags screenshot](images/EPM-exclude-tags.png)
+3. Select Tags
+4. Select the 'ck_exclude_from_pci' tag to exclude the entity from affecting the Permissions Creep Index score for that authorization system.
+5. Select the 'ck_exclude_from_reports' tag to exclude the entity from being reported as a risk in generated reports. 
+6. Select Save
+
+## Procedure: Review publicly accessible resources
+### Azure and GCP
+1. Navigate to Reports > Permissions Analytics Report 
+2. Auth system: Azure or GCP
+3. Categories to review:
+   - Blob/Storage Containers Accessible Externally
+   - Open Network Security Groups (Azure only)
+
+### AWS
+1. Navigate to Reports > Permissions Analytics Report 
+2. Auth system: AWS
+3. Categories to review:
+   - S3 Bucket Encryption
+   - S3 Buckets Accessible Externally
+   - EC2 Buckets Accessibility
+   - Open Security Groups
+
+## Procedure: Right-sizing permissions
+### Azure and GCP
+*For user, group, application, or managed identity*
+
+This will create and assign a custom role based on the identity's activity over the last 90 days.  This action will also remove the selected built-in roles.  The change will be reflected in the Azure/GCP portal immediately and in EPM within 4 hours, unless the data collection is triggered manually.
+1. Navigate to Remediation > Permissions > Filter by:
+```Auth System Type: Azure/GCP
+Auth System: All, 
+Search For (user/group/application/managed identity), 
+User Status: Active, 
+PCI: High, 
+Task Usage: Any
+```
+> Click Apply
+2. Select identity
+3. Select the directly assigned role/s that are to be right-sized
+4. Select Revoke Unused Tasks
+5. Select Execute
+
+### AWS
+*For user, group, or role*
+
+Right-sizing for AWS is the same as removing a policy.  This action will remove the policy from the identity in the AWS portal immediately.  The change will be reflected by EPM within 4 hours unless the data collection is triggered manually.
+1. Navigate to Remediation > Permissions > Filter by:
+```
+Auth System Type: AWS
+Auth System: All, 
+Search For (user/group/role), 
+User Status: Active, 
+PCI: High, 
+Task Usage: Any
+```
+> Click Apply
+2. Select identity
+3. Select Detach Policies
+4. Select policies from Available Policies
+5. Submit
+
+## Procedure: Schedule custom report generation
+This will generate reports to be emailed to selected recipients on a set schedule. The recipients will receive an email with a link that will allow them to download the report. The link will remain active for 30 days.
+
+1. Navigate to Reports > Custom Reports
+2. Click New Custom Report
+3. Enter a report name
+4. Select the required report and click Next
+5. Select the required authorisation systems from each of the platforms
+6. Tick Collate to combine all of the authorisation systems into one report
+7. Select Schedule to set the required intervals for the report generation
+8. Select Share With to add any other recipients of the report.
+9. Click Save
+

@@ -8,9 +8,9 @@ Aside from an overview of EPM, hackathon participants will be carrying out a num
 2. [Enable EPM in your organisation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
 3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
 4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
-5. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documenation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
-6. [Just enough access policy creation / Creating a role](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
-7. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documenation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+5. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
+6. [Just enough access policy creation / Creating a role] and (#procedure-create-a-custom-rolepolicy)[official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+7. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
 8. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
 
 # Common Entra Permissions Management (EPM) Procedures
@@ -142,7 +142,6 @@ Create custom alerts for actions or sensitive resources.
 2. Enter a name for the alert
 3. Choose the authorisation system type the alert will apply to.
 4. Choose the authorisation system, then build a query based on the actions or resources that will be monitored.
-
 
 ### Statistical anomalies
 Detect outliers in an identity's behaviour such as unusual access patterns.

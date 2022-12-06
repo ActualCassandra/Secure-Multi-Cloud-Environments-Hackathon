@@ -8,10 +8,10 @@ Aside from an overview of EPM, hackathon participants will be carrying out a num
 2. [Enable EPM in your organisation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
 3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
 4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
-5. [Permissions on Demand](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
-6. [Just enough access poilcy creation / Creating a role](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
-7. [Rightsize permissions](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
-8. [Create an alert](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
+5. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documenation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
+6. [Just enough access policy creation / Creating a role](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+7. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documenation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+8. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
 
 # Common Entra Permissions Management (EPM) Procedures
 There are a number of procedures that you will use frequently when managing EPM.
@@ -20,7 +20,6 @@ There are a number of procedures that you will use frequently when managing EPM.
 *For user, group, application, or managed identity.*
 
 This will remove the role from the identity in the Azure/GCP portal immediately.  The change will be reflected by EPM within 4 hours, unless you trigger the data collection sooner.
-
 
 1. Navigate to Remediation > Permissions > Filter by:
 ```Auth System Type: Azure or GCP
@@ -57,7 +56,6 @@ Task Usage: Any
 3. Select Detach Policies
 4. Select policies from Available Policies
 5. Submit
-
 
 ## Procedure: Assign Read-Only Status
 ### Azure and GCP

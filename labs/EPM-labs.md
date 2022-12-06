@@ -9,7 +9,7 @@ Aside from an overview of EPM, hackathon participants will be carrying out a num
 3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
 4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
 5. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
-6. [Just enough access policy creation / Creating a role] and (#procedure-create-a-custom-rolepolicy)[official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+6. [Just enough access policy creation / Creating a role](#procedure-create-a-custom-rolepolicy) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
 7. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
 8. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
 

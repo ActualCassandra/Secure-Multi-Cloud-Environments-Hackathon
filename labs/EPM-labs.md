@@ -1,4 +1,20 @@
-# Common Entra Permissions Management Procedures
+# Getting started with Entra Permissions Management (EPM)
+:warning: Please [double check the official documentation page(s)](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant), as the product is in rapid development and changes are frequent.
+
+This hackathon will, for most attendees, require the use of an EPM trial and we have an official guide available for you [here](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/permissions-management-trial-user-guide).
+
+Aside from an overview of EPM, hackathon participants will be carrying out a number of activities. Here are some relevant documentation page links to help you complete your tasks:
+1. [Sign up to the EPM Trial (if required)](t https://aka.ms/TryPermissionsManagement )
+2. [Enable EPM in your organisation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
+3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
+4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
+5. [Just enough access policy creation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+6. [Permissions on Demand](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
+7. [Just enough access poilcy creation / Creating a role](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+8. [Rightsizing permissions](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+9. [Create an alert](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
+
+# Common Entra Permissions Management (EPM) Procedures
 
 ## Procedure: Remove a role from an identity
 ### Azure and GCP

@@ -116,18 +116,6 @@ Additional activities agendees can carry out once the main lab(s) have been fini
  - Comfortable with command line interface
  - Familiar with the Azure Portal
 
-## TODO
- - [x] Find a script to 'generate sample findings' for MDfC. Found and Agenda has links
- - [ ] Check activities to borrow / use from other content:
-   - [x] Azure Security management deep dive Day 2 has some slides worth borrowing
-   - [x] Days of the Defenders
-   - [ ] Multi Cloud/Hybrid Cloud Security sales workshop
-   - [ ] Defender for Cloud Usage Workshop
- - [ ] Advertise for Hack v-team members once the basics are done and a skeleton supporting deck is also done
-
-## Future Content / Topics
- - Defender EASM once there is MDfC integration
- - Defender for Storage for AWS once it is in public preview
 
 ## Other sites with labs to build upon/leverage
  - > #### [MDC Enterprise Onboarding](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Onboarding)

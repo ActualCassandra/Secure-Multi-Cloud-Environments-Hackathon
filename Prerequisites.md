@@ -37,14 +37,15 @@ You will have to ensure you have enabled the following services, trial or otherw
  - DO NOT UPDATE THE OPERATING SYSTEM
 
 **Containers**
-
+:warning:May be a stretch goal.
  - You'll need at least one Amazon EKS cluster with permissions to access the EUKS K8s API server. If you are creating a new cluster, folow these instructions: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
  - The resource capacity to create a new SQS queue, Kinesis Fire Hose delivery stream, and S3 bucket in the cluster's region.
    - Verify that the pre-requisites have not changed at this Microsoft Docs link - [AWS container pre-requisites: Scroll down to 'To enable the Defender for Containers plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites)
  - [Supported features by environment](https://learn.microsoft.com/en-us/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-containers?tabs=aws-eks#supported-features-by-environment)
+ - [Install Kubernetes Goat](https://madhuakula.com/kubernetes-goat/docs/), if you want a container which will show a lot more noise in the portal.
 
 ## Checks
-
+:warning: Important to confirm, as this is [required for Defender for Servers to get deployed via auto provisioning](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites).
 [SSM Agent Installation verification:](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent-status-and-restart.html)
  - Linux: In your shell - `sudo systemctl status amazon-ssm-agent`
  - Windows: Run in PowerShell - `Get-Service AmazonSSMAgent`

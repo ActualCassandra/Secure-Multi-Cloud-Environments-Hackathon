@@ -9,7 +9,7 @@ After their recent breach, new corporate security control requirements have been
 Imbroglio will mainly run PaaS services in Azure but has servers and containers running in its other cloud provider(s). 
 
 You have been asked to:
- - Improve the security of Azure AD implementation
+ - Improve the security of their Azure AD implementation
  - Control access into AWS using Azure AD
  - Ensure their cloud identities are following good practice
  - Gain visibility of all cloud resources and protect Imbroglio's cloud workloads

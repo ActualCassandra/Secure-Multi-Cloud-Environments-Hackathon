@@ -11,12 +11,15 @@ leverage Microsoft security technologies and services to secure your customer's 
  - [Day 1:](/Day1.md) You will start the hackathon by learning how to control access into multi-cloud environments and gain insights into over provisioned roles using Microsoft Entra. You'll also get started with onboarding into Defender for Cloud leveraging Azure Arc.
  - [Day 2:](/Day2.md) You will delve deeper into how to use both Defender for Cloud and Entra Permissions Management to secure your customer's multi-cloud environments.
  - [Day 3:](/Day3.md) Finally, you will learn about multi-cloud automation, detection, and response and bring it all together into Microsoft Sentinel.
+Please check each day to see the detailed agenda for the day.
 
 ## Event Registration
 The first running of this event will take place on 12-15 December 2022 via Microsoft Teams, register [here](https://aka.ms/MultiCloudSecurityHackathon-Regp).
 
-### W-I-P
-Work-in-progress detailed [Agenda here](Agenda.md).
+## Prerequisites
+:warning:There are a number of technical requirements before you can start the hackathon, see [prerequisites page](Prerequisites.md).
+
+At least one person on your team will need to be comfortable in both AWS an Azure, too.
 
 ## Precursor events to this hack
 This hack builds upon the previous Securing Multivendor Clouds Series and the Defender for Cloud Masterclass partner events. The content for these is stil available:

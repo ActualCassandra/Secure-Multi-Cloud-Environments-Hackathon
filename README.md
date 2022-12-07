@@ -21,6 +21,9 @@ The first running of this event will take place on 12-15 December 2022 via Micro
 
 At least one person on your team will need to be comfortable in both AWS an Azure, too.
 
+## Background information for attendees
+We have a short [scenario page](Scenario.md) to help you relate the lab tasks to a potential real world engagement.
+
 ## Precursor events to this hack
 This hack builds upon the previous Securing Multivendor Clouds Series and the Defender for Cloud Masterclass partner events. The content for these is stil available:
  - [Securing Multi Vendor Clouds Part 1](https://github.com/LuciBlanchardMSFT/SecuringMultiVendorClouds)

@@ -13,11 +13,12 @@ Depending on the specific hack, you will need to have access to tenants in:
 High levels of access are required in all tenants. Please ensure that you have also properly secured access into your tenant (such as requiring [MFA](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted) and using [PIM](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-getting-started) in Azure, or [MFA in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html) and [MFA in GCP](https://cloud.google.com/identity/solutions/enforce-mfa).
 
 ### Azure permissions
- - [It depends](https://learn.microsoft.com/en-us/azure/defender-for-cloud/permissions#roles-and-allowed-actions), but for the purposes of this lab, Owner to the subscription being used will be make things simpler.
+ - [It depends](https://learn.microsoft.com/en-us/azure/defender-for-cloud/permissions#roles-and-allowed-actions), but for the purposes of this lab, Owner to the subscription being used will be make things simpler for MDC. In the real world, please use [Azure PIM](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-getting-started) and least privilege depending on the specific role requirements.
+ - In order to enable Entra Permissions Management, you will need *global administrator* permissions as a user in your tenant. [Learn more](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant#prerequisites).
 ### AWS Permissions
- - Administrator on the AWS account being used
+ - [Administrator on the AWS account being used](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#availability)
 ### GCP Permissions
- - Owner on the GCP organization or project being used
+ - [Owner on the GCP organization or project being used](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#availability)
 
 ## Services
 You will have to ensure you have enabled the following services, trial or otherwise.

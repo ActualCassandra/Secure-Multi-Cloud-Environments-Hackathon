@@ -29,14 +29,14 @@ You will have to ensure you have enabled the following services, trial or otherw
 ## Resources
 :warning: This hackathon needs some compute resources running in your multi-cloud environment(s).
 
-**Virtual Machines/Servers**
+### Virtual Machines/Servers
  - You'll need a virtual machine running Windows Server 2019, with 2-4 vCPU, and 2-4 GB RAM. Something like a t2.medium. This will go beyond free tier limits but you'll only be running this virtual machine for a few days.
    - The virtual machine needs to have AWS Systems Manager (SSM) agent installed, [choose an AMI which comes with it](https://docs.aws.amazon.com/systems-manager/latest/userguide/ami-preinstalled-agent.html), or [install manually](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-managed-win.html).
    - Verify that the pre-requisites have not changed at this Microsoft Docs link - [AWS virtual machine pre-requisites: Scroll down to 'To enable the Defender for Servers plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites)
  - [Virtual machine requirements for Defender for Servers](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/minimum-requirements?view=o365-worldwide#hardware-and-software-requirements)
  - DO NOT UPDATE THE OPERATING SYSTEM
 
-**Containers**
+### Containers
 :warning:May be a stretch goal.
  - You'll need at least one Amazon EKS cluster with permissions to access the EUKS K8s API server. If you are creating a new cluster, folow these instructions: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
  - The resource capacity to create a new SQS queue, Kinesis Fire Hose delivery stream, and S3 bucket in the cluster's region.

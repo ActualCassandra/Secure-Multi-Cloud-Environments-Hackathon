@@ -33,7 +33,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
 1. Azure AD for SSO with AWS
 
 #### Entra Permissions Management (EPM)
-1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm)
+1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm) Steps 1-4.
 
 #### Microsoft Defender for Cloud (MDC)
 1. [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)

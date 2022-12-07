@@ -1,5 +1,5 @@
 # Agenda for the Hack
-Proposed agenda for the hack.
+Proposed agenda for the hack - will eventually be repurposed into a separate 'Learning Resources' page.
 
 ## Session One: Securing Identities in multi-cloud environments
 ### 1. Azure Active Directory (AAD)

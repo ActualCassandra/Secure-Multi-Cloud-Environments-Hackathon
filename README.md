@@ -16,6 +16,8 @@ Please check each day to see the detailed agenda for the day.
 ## Event Registration
 The first running of this event will take place on 12-15 December 2022 via Microsoft Teams, register [here](https://aka.ms/MultiCloudSecurityHackathon-Regp).
 
+:warning: **Due to some scheduling issues, Azure Arc will have limited coverage in this hack, but we have a two day Arc-specific hack on 10-11 January. Please register to have a deep dive into that specific area. [Register here](https://aka.ms/azurearcpartnerhack).**
+
 ## Prerequisites
 :warning:There are a number of technical requirements before you can start the hackathon, see [prerequisites page](Prerequisites.md).
 

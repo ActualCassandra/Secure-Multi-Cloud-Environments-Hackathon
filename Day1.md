@@ -21,6 +21,11 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our Imbro
 
 ## Day 1 Challenge
 Onboarding your resources.
+1. Ensure your Azure AD tenant has MFA enabled and that all user accounts are using just enough access and following least privilege. 
+2. Configure an AWS account to use Azure AD for single-sign on.
+3. Configure Entra Permissions Management (EPM) and onboard your AWS account into EPM
+4. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers if you want a bigger challenge) into Defender for Servers.
+5. Present back to your proctor.
 
 ### Prerequisites
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)

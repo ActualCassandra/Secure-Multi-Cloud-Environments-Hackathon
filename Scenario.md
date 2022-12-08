@@ -10,7 +10,7 @@ Imbroglio will mainly run PaaS services in Azure but has servers and containers 
 
 You have been asked to:
  - Improve the security of their Azure AD implementation
- - Control access into AWS using Azure AD
+ - Control access into the AWS using Azure AD for single sign-on
  - Ensure their cloud identities are following good practice
  - Gain visibility of all cloud resources and protect Imbroglio's cloud workloads
  - Ensure that any security recommendations are actioned by the appropriate team(s)
@@ -21,7 +21,7 @@ You have been asked to:
 ## The Hack
 This hack will cover the following topics:
 1. Multi-cloud identity and access management with Entra
-2. Protecting multi-cloud resources with Defender for Cloud and Azure Arc
+2. Protecting multi-cloud resources with Defender for Cloud
 3. Multi-cloud automation, detection, and response
 
 A basic understanding of the following technologies is required:

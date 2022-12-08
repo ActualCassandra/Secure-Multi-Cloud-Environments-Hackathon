@@ -6,13 +6,13 @@ Sessions on day three of the Secure Multi-Cloud Environments hack around our [Im
 | :--- | :---
 | 0930 | Welcome and kick-off
 | 0945 | `[LAB]` Threat hunting in MDC
-| TIME | `[LAB]` Threat hunting in the M365 Security Portal
-| TIME | `[LAB]` Workflow automation in MDC
-| TIME | Lunch
-| TIME | Microsoft Sentinel Overview
-| TIME | `[LAB]` Connecting data sources
-| TIME | `[LAB]` Tying it all together
-| TIME | `[LAB]` KQL
+|  | `[LAB]` Threat hunting in the M365 Security Portal
+|  | `[LAB]` Workflow automation in MDC
+| 1200 | Lunch
+| 1230 | Microsoft Sentinel Overview
+|  | `[LAB]` Connecting data sources
+|  | `[LAB]` Tying it all together
+|  | `[LAB]` KQL
 | 1500 | Within your group - present to proctor
 | 1530 | Q&A, Discussion around partner challenges and goodbyes
 

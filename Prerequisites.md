@@ -7,7 +7,7 @@ Depending on the specific hack, you will need to have access to tenants in:
  - [Amazon Web Services (AWS)](https://aws.amazon.com/free/) or
  - [Google Cloud Platform (GCP)](https://cloud.google.com/blog/products/gcp/getting-started-with-google-cloud-for-free)
  
- *Some stretch goals will entail working in both AWS and GCP.*
+ *Some stretch goals will entail working in both AWS and GCP. However, for the first hack, AWS will be the focus.*
 
 ## Tenant-level permissions
 High levels of access are required in all tenants. Please ensure that you have also properly secured access into your tenant (such as requiring [MFA](https://learn.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted) and using [PIM](https://learn.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-getting-started) in Azure, or [MFA in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html) and [MFA in GCP](https://cloud.google.com/identity/solutions/enforce-mfa).
@@ -37,7 +37,7 @@ You will have to ensure you have enabled the following services, trial or otherw
  - DO NOT UPDATE THE OPERATING SYSTEM
 
 ### Containers
-:warning:May be a stretch goal.
+:warning: Stretch goal if you want more to do or think you'll finish the VM with time to spare.
  - You'll need at least one Amazon EKS cluster with permissions to access the EUKS K8s API server. If you are creating a new cluster, folow these instructions: https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
  - The resource capacity to create a new SQS queue, Kinesis Fire Hose delivery stream, and S3 bucket in the cluster's region.
    - Verify that the pre-requisites have not changed at this Microsoft Docs link - [AWS container pre-requisites: Scroll down to 'To enable the Defender for Containers plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites)

@@ -5,8 +5,8 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our [Imbr
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome and Housekeeping
-| 0945 | Azure AD for Single Sign-on with AWS
-| 1030 | `[LAB]` Preparing your AAD tenant
+| 0945 | `[LAB]` Preparing your AAD tenant
+| 1030 | Azure AD for Single Sign-on with AWS
 | 1100 | `[LAB]` Integrating AWS with AAD
 | 1200 | Lunch
 | 1230 | Entra Permissions Management (EPM) Overview

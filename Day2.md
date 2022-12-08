@@ -1,5 +1,5 @@
 # Day Two
-Sessions on day two of the Secure Multi-Cloud Environments hack around our Imbroglio Group scenario.
+Sessions on day two of the Secure Multi-Cloud Environments hack around our [Imbroglio Group scenario](Scenario.md).
 
 ## Agenda
 | **Time** | **Description**

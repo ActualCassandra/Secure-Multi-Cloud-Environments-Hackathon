@@ -24,8 +24,9 @@ Onboarding your resources.
 1. Ensure your Azure AD tenant has MFA enabled and that all user accounts are using just enough access and following least privilege. 
 2. Configure an AWS account to use Azure AD for single-sign on.
 3. Configure Entra Permissions Management (EPM) and onboard your AWS account into EPM
-4. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers if you want a bigger challenge) into Defender for Servers.
-5. Present back to your proctor.
+4. Configure Defender for Cloud's enhanced security features
+5. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers if you want a bigger challenge) into Defender for Servers.
+6. Present back to your proctor.
 
 ### Prerequisites
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)
@@ -43,5 +44,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
 #### Microsoft Defender for Cloud (MDC)
 1. [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)
 2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
-3. [Defender for Servers](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+   - [Official MDC lab - Creating an AWS connector](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-2-create-an-aws-connector-for-the-new-aws-account-in-microsoft-defender-for-cloud)
+4. [Defender for Servers Inttroduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+5. [Selecting a Defender for Servers Plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan)
 

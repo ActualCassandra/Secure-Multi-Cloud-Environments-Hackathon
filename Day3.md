@@ -20,7 +20,18 @@ Sessions on day three of the Secure Multi-Cloud Environments hack around our [Im
 [Background information on the hackathon scenario.](Scenario.md)
 
 ## Day 3 Challenge
-Find threats in your cloud environments and block.
+Find and block threats in your cloud environments.
+1. Generate test alerts in the M365 security portal
+2. Create sample alerts in the MDC blade
+3. Manually trigger ransomware alerts from your VM
+4. Find threats in your AWS environment using the MDC blade
+5. Find threats in the M365 security portal
+6. Create a MDC workflow automation to isolate your virtual machine
+7. Create a Microsoft Sentinel workspace
+8. Connect lab data sources into Microsoft Sentinel
+9. :timer_clock: DEPENDING ON TIME: Identity AWS-originating alerts in Microsoft Sentinel
+10. :timer_clock: DEPENDING ON TIME: Using KQL to query for AWS-related security alerts
+11. Present back to your proctor
 
 ### Prerequisites
 You'll need to complete the labs from [Day 1](Day1.md), except for AWS SSO.

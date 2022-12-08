@@ -38,6 +38,7 @@ Day two will involve finishing the configuration of and using Entra Permissions 
    - [YouTube Video](https://www.youtube.com/watch?v=dasixjOOldk)
 2. [Custom Standards and Assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/custom-assessments-and-standards-in-microsoft-defender-for-cloud/ba-p/3066575)
 3. [Setting up governance in Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/governance-rules)
+   - [Official MDC lab on configuring governance](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Governance.md#exercise-1-add-a-new-governance-rule-in-microsoft-defender-for-cloud)
 
 #### Entra Permissions Management (EPM)
 1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm) Starting from Step 5, permissions on demand.

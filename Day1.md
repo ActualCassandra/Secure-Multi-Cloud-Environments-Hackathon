@@ -11,7 +11,7 @@ Sessions on day one of the Secure Multi-Cloud Environments hack around our [Imbr
 | 1200 | Lunch
 | 1230 | Entra Permissions Management (EPM) Overview
 | 1300 | `[LAB]` Onboarding AWS into EPM
-| 1400 | `[LAB]` Planning your MDC deployment
+| 1400 | Planning your MDC deployment
 | 1430 | `[LAB]` Enrolling AWS servers into MDC
 | 1500 | Within your group - present to proctor
 | 1530 | Q&A, Discussion around partner challenges

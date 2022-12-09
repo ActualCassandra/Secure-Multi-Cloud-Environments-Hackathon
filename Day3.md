@@ -2,6 +2,7 @@
 Sessions on day three of the Secure Multi-Cloud Environments hack around our [Imbroglio Group scenario](Scenario.md).
 
 ## Agenda
+Times are estimates.
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome and kick-off
@@ -34,10 +35,10 @@ Find and block threats in your cloud environments.
 11. Present back to your proctor
 
 ### Prerequisites
-You'll need to complete the labs from [Day 1](Day1.md), except for AWS SSO.
+You must have completed the labs from [Day 1](Day1.md), except for AWS SSO.
 
 ### Introduction
-Day three is around threat hunting and detection and response in MDC and Sentinel.
+Day three is around threat hunting and detection and response in MDC and Sentinel. Depending on Time, Sentinel may end up being optional.
 
 ### Learn more / lab resources
 

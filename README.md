@@ -21,7 +21,7 @@ The first running of this event will take place on 12-15 December 2022 via Micro
 ## Prerequisites
 :warning:There are a number of technical requirements before you can start the hackathon, see [prerequisites page](Prerequisites.md).
 
-At least one person on your team will need to be comfortable in both AWS an Azure, too.
+**At least one person on your team will need to be comfortable in both AWS an Azure, or as a team you need individuals who are comfortable.**
 
 ## Background information for attendees
 We have a short [scenario page](Scenario.md) to help you relate the lab tasks to a potential real world engagement.

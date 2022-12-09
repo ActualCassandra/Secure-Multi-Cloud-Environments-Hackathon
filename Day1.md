@@ -2,6 +2,7 @@
 Sessions on day one of the Secure Multi-Cloud Environments hack around our [Imbroglio Group scenario](Scenario.md).
 
 ## Agenda
+Times are estimates.
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome and Housekeeping
@@ -25,14 +26,14 @@ Onboarding your resources.
 2. Configure an AWS account to use Azure AD for single-sign on.
 3. Configure Entra Permissions Management (EPM) and onboard your AWS account into EPM
 4. Configure Defender for Cloud's enhanced security features
-5. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers if you want a bigger challenge) into Defender for Servers.
+5. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers *if you want a bigger challenge*) into Defender for Servers.
 6. Present back to your proctor.
 
 ### Prerequisites
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)
 
 ### Introduction
-Day one is all about getting your AWS tenants and resources onboarded, so that you can work with those resources on the following days.
+Day one is all about getting the service basics congigured, your Azure tenant locke down, and your AWS tenant and resources onboarded, so that you can work with those resources on the following days.
 
 ### Learn more / lab resources
 #### Azure AD (AAD)

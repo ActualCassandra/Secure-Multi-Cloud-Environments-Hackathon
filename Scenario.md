@@ -17,6 +17,7 @@ You have been asked to:
  - Help Imbroglio adhere to their corporate security control requirements 
  - Automate provisioning as well as the detection and response of security incidents
 
+:page_with_curl: Your Microsoft proctor can provide some more additional specifics, acting as a customer representative.
 
 ## The Hack
 This hack will cover the following topics:

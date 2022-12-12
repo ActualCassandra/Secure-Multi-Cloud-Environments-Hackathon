@@ -26,7 +26,7 @@ You will have to ensure you have enabled the following services, trial or otherw
  - [Defender for Cloud Enhanced Security Features](https://learn.microsoft.com/en-us/azure/defender-for-cloud/enable-enhanced-security)
    - Do not need to enable all the workload protection features against your subscriptions, as this will be covered in the hackathon.
  - [Entra Permissions Management](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
-   - At least the Trial.
+   - Please enable the trial, we will configure data collection in the hackathon.
  - [Azure AD P2](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-get-started-premium)
 
 ## Resources

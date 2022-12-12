@@ -27,7 +27,7 @@ Onboarding your resources.
 3. Configure Entra Permissions Management (EPM) and onboard your AWS account into EPM
 4. Configure Defender for Cloud's enhanced security features
 5. Connect your AWS account to Microsoft Defender for Cloud (MDC) and entroll your virtual machine(s) (and containers *if you want a bigger challenge*) into Defender for Servers.
-6. Present back to your proctor.
+6. Present back to your proctor. Live 'show and tell' in the portal or screenshots of the completion of each step.
 
 ### Prerequisites
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)

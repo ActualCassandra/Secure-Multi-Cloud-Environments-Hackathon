@@ -32,7 +32,7 @@ Onboarding your resources.
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)
 
 ### Introduction
-Day one is all about getting your AWS tenants and resources onboarded, so that you can work with those resources on the following days.
+Day one is all about getting your AWS and Azure tenants and resources onboarded, so that you can work with those resources on the following days.
 
 ### Learn more / lab resources
 #### Azure AD (AAD)
@@ -40,7 +40,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
    - Hardening
      - Option A: Enable Secure by Default:
        - [ ] Enable from security config: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults
-     - Option B: Common Conditionl Access policies:
+     - Option B: Common Conditional Access policies:
        - [ ] Require MFA for administrators: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
        - [ ] Securing security info registration: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-registration
        - [ ] Require MFA for Azure management: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management
@@ -125,15 +125,15 @@ Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local cr
    - [ ] Register 'AWS IAM Identity Center (successor to AWS Single Sign-On)' in Enterprise Gallery: https://portal.azure.com/#view/Microsoft_AAD_IAM/AppGalleryBladeV2
    - [ ] Assign AWS-group to SP
    - [ ] Enable Saml-based SSO and download Federation Metadata XML
-   - [ ] Upload Metadata XML, review and "ACCEPT" ne identity provider 
+   - [ ] Upload Metadata XML, review and "ACCEPT" new identity provider 
    - [ ] Enable Provisioning Mode - Automatic
 #### Entra Permissions Management (EPM)
 1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm) Steps 1-4.
 
 #### Microsoft Defender for Cloud (MDC)
 1. [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)
-2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
+2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws) 
    - [Official MDC lab - Creating an AWS connector](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-2-create-an-aws-connector-for-the-new-aws-account-in-microsoft-defender-for-cloud)
-4. [Defender for Servers Inttroduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+4. [Defender for Servers Introduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
 5. [Selecting a Defender for Servers Plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan)
 

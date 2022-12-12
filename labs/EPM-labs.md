@@ -1,17 +1,19 @@
 # Getting started with Entra Permissions Management (EPM)
+:warning: Many people use multiple accounts in their day-to-day activities. Make sure you are using an InPrivate/Private/Incognito browser session or a have the browser set to a specific session for  the user account you will use for the labs.
 :warning: Please [double check the official documentation page(s)](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant), as the product is in rapid development and changes are frequent.
 
 :page_facing_up:This hackathon will, for most attendees, require the use of an EPM trial and we have an official guide available for you [here](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/permissions-management-trial-user-guide).
 
 Aside from an overview of EPM, hackathon participants will be carrying out a number of activities. Here are some relevant documentation page links to help you complete your tasks:
-1. [Sign up to the EPM Trial (if required)](https://aka.ms/TryPermissionsManagement) This will take you to the trial sign-up screen and the M365 portal. The account you use must have *global administrator* permissions to the tenant you will use for the trial.
+1. [Sign up to the EPM Trial (if required)](https://aka.ms/TryPermissionsManagement) This will take you to the trial sign-up screen and the M365 portal. The account you use must have *global administrator* permissions to the tenant you will use for the trial. 
 2. [Enable EPM in your organisation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
-3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
-4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
-5. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
-6. [Just enough access policy creation / Creating a role](#procedure-create-a-custom-rolepolicy) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
-7. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
-8. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
+   - This page also has you enable the trial as one of its firstr steps, so you will be starting from ['Configure data collection settings'](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant#configure-data-collection-settings) in many cases if you used the aka.ms link above, which will lead you on to step 4.
+4. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
+5. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
+6. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
+7. [Just enough access policy creation / Creating a role](#procedure-create-a-custom-rolepolicy) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
+8. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+9. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
 
 # Common Entra Permissions Management (EPM) Procedures
 There are a number of procedures that you will use frequently when managing EPM.

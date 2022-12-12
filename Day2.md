@@ -49,7 +49,7 @@ Day two will involve finishing the configuration of and using Entra Permissions 
 #### Microsoft Defender for Cloud (MDC)
 1. [EPM's Permission Creep Index in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
    - [YouTube Video](https://www.youtube.com/watch?v=dasixjOOldk)
-2. [Custom Standards and Assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/custom-assessments-and-standards-in-microsoft-defender-for-cloud/ba-p/3066575)
+2. [Custom Policies and Initiatives](https://learn.microsoft.com/en-us/azure/defender-for-cloud/custom-security-policies?pivots=azure-portal)
 3. [Setting up governance in Defender for Cloud](https://docs.microsoft.com/en-us/azure/defender-for-cloud/governance-rules)
    - [Official MDC lab on configuring governance](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Governance.md#exercise-1-add-a-new-governance-rule-in-microsoft-defender-for-cloud)
 

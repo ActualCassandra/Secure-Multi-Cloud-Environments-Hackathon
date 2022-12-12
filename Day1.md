@@ -11,7 +11,7 @@ Times are estimates.
 | 1100 | `[LAB]` Integrating AWS with AAD
 | 1200 | Lunch
 | 1230 | Entra Permissions Management (EPM) Overview
-| 1300 | `[LAB]` Onboarding AWS into EPM
+| 1300 | `[LAB]` Onboarding into EPM
 | 1400 | Planning your MDC deployment
 | 1430 | `[LAB]` Enrolling AWS servers into MDC
 | 1500 | Within your group - present to proctor
@@ -48,6 +48,6 @@ Day one is all about getting the service basics congigured, your Azure tenant lo
 1. [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)
 2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
    - [Official MDC lab - Creating an AWS connector](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-2-create-an-aws-connector-for-the-new-aws-account-in-microsoft-defender-for-cloud)
-4. [Defender for Servers Inttroduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+4. [Defender for Servers Introduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
 5. [Selecting a Defender for Servers Plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan)
 

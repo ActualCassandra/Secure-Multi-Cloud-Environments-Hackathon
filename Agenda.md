@@ -74,9 +74,8 @@ Other tutorials
 ### 1. Automation
  - Automating MDC deployments at scale (which topics? e.g. https://www.youtube.com/watch?v=o9wHIS_QLJE&t=2122s)
  - XDR? (e.g.https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation)
-   - MDE isolation?
-   - AWS API security group?
-   - More?
+   - MDE isolation
+   - [Notification of compliance assessment failure](https://learn.microsoft.com/en-us/azure/defender-for-cloud/regulatory-compliance-dashboard#run-workflow-automations-when-there-are-changes-to-your-compliance)
 ### 2. Microsoft Sentinel
  - Overview
  - Connecting up the various data sources used in the hack `[LAB]`

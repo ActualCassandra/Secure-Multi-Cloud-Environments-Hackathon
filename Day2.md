@@ -44,6 +44,8 @@ You must have completed ***most*** of the day 1 activities - AWS SSO is *optiona
 Day two will involve finishing the configuration of and using Entra Permissions Management (EPM) and Microsoft Defender for Cloud (MDC) which had the basic configuration on day one, including connecting to AWS.
 
 ### Learn more / lab resources
+:warning: Many people use multiple accounts in their day-to-day activities. Make sure you are using an InPrivate/Private/Incognito browser session or a have the browser set to a specific session for  the user account you will use for the labs.
+
 #### Microsoft Defender for Cloud (MDC)
 1. [EPM's Permission Creep Index in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/other-threat-protections#entra-permission-management-formerly-cloudknox)
    - [YouTube Video](https://www.youtube.com/watch?v=dasixjOOldk)

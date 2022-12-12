@@ -41,6 +41,7 @@ You must have completed the labs from [Day 1](Day1.md), except for AWS SSO.
 Day three is around threat hunting and detection and response in MDC and Sentinel. Depending on Time, Sentinel may end up being optional.
 
 ### Learn more / lab resources
+:warning: Many people use multiple accounts in their day-to-day activities. Make sure you are using an InPrivate/Private/Incognito browser session or a have the browser set to a specific session for  the user account you will use for the labs.
 
 #### Microsoft Defender for Cloud (MDC)
 1. [Workflow automation in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation))

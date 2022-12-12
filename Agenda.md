@@ -6,11 +6,13 @@
  - Overview
  - Preparing your AAD tenant `[LAB]`
 ### 2. Integrating Amazon Web Services (AWS) with AAD
+ - [AWS SSO method used in the hackathon](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-tutorial#next-steps)
  - [Deploying Microsoft security solutions in AWS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-security-solutions)
  - [AAD IAM for AWS](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
  - [Multi-cloud security and identity with Azure and Amazon web services (AWS)](https://docs.microsoft.com/en-us/azure/architecture/aws-professional/security-identity)
+Other tutorials
  - [Tutorial: Azure AD SSO integration with AWS Single-Account Access](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial)
- - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations) `[LAB]`
+ - [AWS Single sign on tutorial](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial?source=recommendations) 
 ### 3. Integrating Google Cloud Platform (GCP) with AAD
  - [Tutorial: AAD SSO Integration with GCP/G Suite](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/google-apps-tutorial) `[LAB]` `[STRETCH GOAL]`
  

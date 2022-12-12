@@ -4,7 +4,7 @@
 :page_facing_up:This hackathon will, for most attendees, require the use of an EPM trial and we have an official guide available for you [here](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/permissions-management-trial-user-guide).
 
 Aside from an overview of EPM, hackathon participants will be carrying out a number of activities. Here are some relevant documentation page links to help you complete your tasks:
-1. [Sign up to the EPM Trial (if required)](https://aka.ms/TryPermissionsManagement)
+1. [Sign up to the EPM Trial (if required)](https://aka.ms/TryPermissionsManagement) This will take you to the trial sign-up screen and the M365 portal. The account you use must have *global administrator* permissions to the tenant you will use for the trial.
 2. [Enable EPM in your organisation](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-enable-tenant)
 3. [Onboard an AWS account](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-aws)
 4. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)

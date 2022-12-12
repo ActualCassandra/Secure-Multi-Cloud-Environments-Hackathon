@@ -36,8 +36,10 @@ Onboarding your resources.
 Day one is all about getting the service basics congigured, your Azure tenant locke down, and your AWS tenant and resources onboarded, so that you can work with those resources on the following days.
 
 ### Learn more / lab resources
+:warning: Many people use multiple accounts in their day-to-day activities. Make sure you are using an InPrivate/Private/Incognito browser session or a have the browser set to a specific session for  the user account you will use for the labs.
+
 #### Azure AD (AAD)
-1. Azure AD for SSO with AWS
+1. [Azure AD for SSO with AWS](https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-tutorial#next-steps)
 
 #### Entra Permissions Management (EPM)
 1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm) Steps 1-4.

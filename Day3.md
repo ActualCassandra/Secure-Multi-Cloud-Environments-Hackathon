@@ -14,7 +14,7 @@ Times are estimates.
 |  | `[LAB]` Connecting data sources
 |  | `[LAB]` Tying it all together
 |  | `[LAB]` KQL
-| 1500 | Within your group - present to proctor
+| 1500 | Within your group - present to proctor. Live 'show and tell' in the portal or screenshots of the completion of each step.
 | 1530 | Q&A, Discussion around partner challenges and goodbyes
 
 ## Scenario

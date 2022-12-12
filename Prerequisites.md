@@ -5,6 +5,7 @@ Please go through this list of prerequisites before attending one of our multi-c
 Depending on the specific hack, you will need to have access to tenants in:
  - [Microsoft Azure](https://azure.microsoft.com/en-gb/free/), plus
  - [Amazon Web Services (AWS)](https://aws.amazon.com/free/) or
+   - [Step by step sign-up steps](https://github.com/ActualCassandra/SecuringMultiVendorCloudsPart2/blob/main/Labs/Modules/Preparing-the-Environments.md#steps-to-create-your-aws-trial-account)
  - [Google Cloud Platform (GCP)](https://cloud.google.com/blog/products/gcp/getting-started-with-google-cloud-for-free)
  
  *Some stretch goals will entail working in both AWS and GCP. However, for the first hack, AWS will be the focus.*

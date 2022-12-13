@@ -62,7 +62,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
 $domain = az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//'
 $hackadmin1 = "hackadmin"
 $hackadmin1pw = "$(-join ((48..57) + (64..90) + (97..122)| Get-Random -Count 12 | foreach {[char]$_}))#"
-$admin = az ad user create --display-name $hackadmin1 --password $hackuser1pw --user-principal-name "$($hackadmin1)@$($domain)" | ConvertFrom-Json 
+$admin = az ad user create --display-name $hackadmin1 --password $hackadmin1pw --user-principal-name "$($hackadmin1)@$($domain)" | ConvertFrom-Json 
 Write-Host "=> AAD user created. UPN: '$($hackadmin1)@$($domain)' - Password: '$($hackadmin1pw)'"
 $hackuser1 = "hackuser"
 $hackuser1pw = "$(-join ((48..57) + (64..90) + (97..122)| Get-Random -Count 12 | foreach {[char]$_}))#"

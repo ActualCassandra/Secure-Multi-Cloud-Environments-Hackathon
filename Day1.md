@@ -43,6 +43,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
      - Option B: Common Conditionl Access policies:
        - [ ] Require MFA for administrators: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
        - [ ] Securing security info registration: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-registration
+       - [ ] Requirement: Be sure to disable Location as a condition. Users should be able to update Security Information from any location
        - [ ] Require MFA for Azure management: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management
        - [ ] Block legacy authentication: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy
        - [ ] Require MFA for all users: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa (report only)
@@ -106,7 +107,7 @@ az vm auto-shutdown --resource-group $resourceGroup --name $vmWinName --time 190
 az vm extension set --publisher Microsoft.Azure.ActiveDirectory --name AADLoginForWindows --resource-group $resourceGroup --vm-name $vmWinName
 
 $vmPIP = az vm list-ip-addresses --resource-group $resourceGroup --name $vmWinName --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" -o tsv
-Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local credentials '$($adminacc)':'$($adminpw)' or Members of $($grpAdmin.displayName)/$($grpUser.displayName)"![image](https://user-images.githubusercontent.com/70759212/207049038-9adabb54-3a68-49b5-bbf8-8ad390db3221.png)
+Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local credentials '$($adminacc)':'$($adminpw)' or Members of $($grpAdmin.displayName)/$($grpUser.displayName)"
 ```
 4. Workload 2: Integrate AWS as a Single-Sign-On application in AAD: https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-tutorial
  - Enable AWS IAM Identity Center

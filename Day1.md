@@ -32,7 +32,7 @@ Onboarding your resources.
 [There are a number of activities to perform and requirements to meet in order to participate.](Prerequisites.md)
 
 ### Introduction
-Day one is all about getting your AWS and Azure tenants and resources onboarded, so that you can work with those resources on the following days.
+Day one is all about getting your AWS tenants and resources onboarded, so that you can work with those resources on the following days.
 
 ### Learn more / lab resources
 #### Azure AD (AAD)
@@ -40,20 +40,23 @@ Day one is all about getting your AWS and Azure tenants and resources onboarded,
    - Hardening
      - Option A: Enable Secure by Default:
        - [ ] Enable from security config: https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults
-     - Option B: Common Conditional Access policies:
+     - Option B: Common Conditionl Access policies:
        - [ ] Require MFA for administrators: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
        - [ ] Securing security info registration: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-registration
        - [ ] Require MFA for Azure management: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management
        - [ ] Block legacy authentication: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy
-       - [ ] Require MFA for all users: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa
+       - [ ] Require MFA for all users: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa (report only)
        - [ ] Review general CA deployment guidance and other Common CA policies: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access
+       - [ ] Exclude **Azure Windows VM Sign-In** and **Azure Linux VM Sign-In**
    - Relevant entities
      - Group (a): Create AAD Security Group used as VM administrators
      - Group (b): Create AAD Security Group used as VM members
      - Group (c): Create AAD Security Group used to access AWS (SSO)
-     - Modify firstname, lastname for AWS-User following the requirements by AWS: https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial#missing-attributes
+     - Group (d): MANUALLY Create dynamic AAD Security Group used to assign licenses
      - User: Create hackadmin1 as a member of AAD Security Group (a)
      - User: Create hackuser1 as a member of AAD Security Group (b)
+     - User: Create hackaws1 as a member of AAD Security Group (c)
+     - User: MANUALLY modify firstname, lastname for AWS-User following the requirements by AWS: https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial#missing-attributes
 ```powershell
 #USERS
 $domain = az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//'
@@ -67,7 +70,7 @@ $user = az ad user create --display-name $hackuser1 --password $hackuser1pw --us
 Write-Host "=> AAD user created. UPN: '$($hackuser1)@$($domain)' - Password: '$($hackuser1pw)'"
 $hackaws1 = "hackaws"
 $hackaws1pw = "$(-join ((48..57) + (64..90) + (97..122)| Get-Random -Count 12 | foreach {[char]$_}))#"
-$aws = az ad user create --display-name $hackaws1 --password $hackaws1pw --user-principal-name "$($hackaws1)@$($domain)" | ConvertFrom-Json 
+$awsuser1 = az ad user create --display-name $hackaws1 --password $hackaws1pw --user-principal-name "$($hackaws1)@$($domain)" | ConvertFrom-Json 
 Write-Host "=> AAD user created. UPN: '$($hackaws1)@$($domain)' - Password: '$($hackaws1pw)'"
 
 #GROUPS
@@ -76,11 +79,10 @@ az ad group member add --group $grpAdmin.id --member-id $admin.id
 $grpUser = az ad group create --display-name "hackVMuser" --mail-nickname "hackVMuser" --description "Used to grant user privileges on Virtual Machines" --force true | ConvertFrom-Json 
 az ad group member add --group $grpUser.id --member-id $user.id
 $grpAWS = az ad group create --display-name "hackAWS" --mail-nickname "hackAWS" --description "Used to grant access to AWS" --force true | ConvertFrom-Json 
-az ad group member add --group $grpAWS.id --member-id $aws.id
-
+az ad group member add --group $grpAWS.id --member-id $awsuser1.id
 ```
-2. Authenticate to Azure hosted Windows-VMs using AAD credentials
-     - [ ] Register connecting client in target tenant: Settings -> Accounts -> E-Mail & accounts ->  Add a work or school account
+2. Authenticate to Azure hosted Windows-VMs using AAD credentials (pre-req: https://learn.microsoft.com/en-us/azure/active-directory/devices/howto-vm-sign-in-azure-ad-windows#supported-azure-regions-and-windows-distributions)
+     - [ ] Register connecting / workplace join your client in target tenant: Settings -> Accounts -> E-Mail & accounts ->  Add a work or school account
      - [ ] Remove Workplace Join: Settings -> Accounts -> Access work or school -> Expand used identity -> Disconnect
 3. Workload 1: Create Azure hosted Windows VM & enable AAD login
    - [ ] Register Resource Group and assign relevant roles:
@@ -125,15 +127,26 @@ Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local cr
    - [ ] Register 'AWS IAM Identity Center (successor to AWS Single Sign-On)' in Enterprise Gallery: https://portal.azure.com/#view/Microsoft_AAD_IAM/AppGalleryBladeV2
    - [ ] Assign AWS-group to SP
    - [ ] Enable Saml-based SSO and download Federation Metadata XML
-   - [ ] Upload Metadata XML, review and "ACCEPT" new identity provider 
-   - [ ] Enable Provisioning Mode - Automatic
+   - [ ] Upload Metadata XML, review and "ACCEPT" ne identity provider 
+5. Workload 3: Enable identity provisioning to AWS: https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-provisioning-tutorial
+  - Configure AWS to support Provisioning with AAD:
+    - [ ] Open AWS IAM Identity Senter -> Settings -> Enable Automatic Provisioning
+    ![image](https://user-images.githubusercontent.com/70759212/207269181-7b886fc1-101c-4534-9165-9ed9041421ef.png)
+    - [ ] Copy provisioning details (SCIM endpoint and token)
+  - Configure AWS SP to provision to AWS
+    - [ ] Ensure proper assignment (aws-group created before)
+    - [ ] Enable Provisioning Mode - Automatic
+    - [ ] Paste Token as **Secret Token** and SCIM endpoint as **Tenant URL**
+    - [ ] Review (but do not change) the attribute mapping table for users
+    - [ ] Enable group sync and review (but do not change) the attribute mapping table for groups
+    - [ ] Select **Sync only assigned users and groups**, set Provisioing Status to **On** and Save
 #### Entra Permissions Management (EPM)
 1. [Getting started with EPM](/labs/EPM-labs.md#getting-started-with-entra-permissions-management-epm) Steps 1-4.
 
 #### Microsoft Defender for Cloud (MDC)
 1. [Planning your Defender for Cloud Deployment](https://docs.microsoft.com/en-us/azure/defender-for-cloud/security-center-planning-and-operations-guide)
-2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws) 
+2. [Connect MDC to AWS](https://docs.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws)
    - [Official MDC lab - Creating an AWS connector](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-2-create-an-aws-connector-for-the-new-aws-account-in-microsoft-defender-for-cloud)
-4. [Defender for Servers Introduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
+4. [Defender for Servers Inttroduction](https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-servers-introduction)
 5. [Selecting a Defender for Servers Plan](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers-select-plan)
 

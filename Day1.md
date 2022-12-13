@@ -43,6 +43,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
      - Option B: Common Conditionl Access policies:
        - [ ] Require MFA for administrators: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
        - [ ] Securing security info registration: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-registration
+       - [ ] **Additional req**: Be sure to disable Location as a condition on CA002 once it got created from the template. Users should be able to update Security Information from any location
        - [ ] Require MFA for Azure management: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management
        - [ ] Block legacy authentication: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy
        - [ ] Require MFA for all users: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa (report only)
@@ -62,7 +63,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
 $domain = az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//'
 $hackadmin1 = "hackadmin"
 $hackadmin1pw = "$(-join ((48..57) + (64..90) + (97..122)| Get-Random -Count 12 | foreach {[char]$_}))#"
-$admin = az ad user create --display-name $hackadmin1 --password $hackuser1pw --user-principal-name "$($hackadmin1)@$($domain)" | ConvertFrom-Json 
+$admin = az ad user create --display-name $hackadmin1 --password $hackadmin1pw --user-principal-name "$($hackadmin1)@$($domain)" | ConvertFrom-Json 
 Write-Host "=> AAD user created. UPN: '$($hackadmin1)@$($domain)' - Password: '$($hackadmin1pw)'"
 $hackuser1 = "hackuser"
 $hackuser1pw = "$(-join ((48..57) + (64..90) + (97..122)| Get-Random -Count 12 | foreach {[char]$_}))#"
@@ -106,7 +107,7 @@ az vm auto-shutdown --resource-group $resourceGroup --name $vmWinName --time 190
 az vm extension set --publisher Microsoft.Azure.ActiveDirectory --name AADLoginForWindows --resource-group $resourceGroup --vm-name $vmWinName
 
 $vmPIP = az vm list-ip-addresses --resource-group $resourceGroup --name $vmWinName --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" -o tsv
-Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local credentials '$($adminacc)':'$($adminpw)' or Members of $($grpAdmin.displayName)/$($grpUser.displayName)"![image](https://user-images.githubusercontent.com/70759212/207049038-9adabb54-3a68-49b5-bbf8-8ad390db3221.png)
+Write-Host "=> RDP connection available via PublicIP: '$($vmPIP)' using local credentials '$($adminacc)':'$($adminpw)' or Members of $($grpAdmin.displayName)/$($grpUser.displayName)"
 ```
 4. Workload 2: Integrate AWS as a Single-Sign-On application in AAD: https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/aws-single-sign-on-tutorial
  - Enable AWS IAM Identity Center

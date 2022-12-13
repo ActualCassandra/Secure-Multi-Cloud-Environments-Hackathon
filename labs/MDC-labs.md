@@ -68,3 +68,7 @@ You will most likely get a popup that says **Rule created successfuly** with an 
 4. Remediate it.
 
 ![Governance - show owner recommendations screenshot](images/MDC-Governance-4.jpg)
+
+## Governance Exercise 3: Create a new rule for specific recommendations and set a different member of your team as the owner.
+ 
+ Exactly the same as [Exercise 1](#governance-exercise-1-add-a-new-governance-rule-in-microsoft-defender-for-cloud), but change the details and conditions.

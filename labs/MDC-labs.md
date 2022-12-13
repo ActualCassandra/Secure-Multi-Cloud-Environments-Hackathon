@@ -27,6 +27,7 @@ Under (1) General details-
 **Description**: High severity recommendations should be remediated ASAP.
 
 Click ***Next***
+
 ![Governance Rule Creation Step 1 screenshot](images/MDC-Governance-1.jpg)
 
 Under (2) Conditions-
@@ -50,11 +51,13 @@ Select **Notify owners weekly on open and overdue tasks**.
 Unselect **Notify owner's direct manager weekly about open and overdue tasks**
 
 Select **Create**
+
 ![Governance Rule Creation Step 2 screenshot](images/MDC-Governance-2.jpg)
 
 Now all your high severity recommendations in Microsoft defender for Cloud will have you as the owner, and you'll have 14 days from when they go unhealthy before Secure Score is affected.
 
 You will most likely get a popup that says **Rule created successfuly** with an option to Apply the rule to existing unassigned recommendations. Feel free to do so for the lab and click **OK**.
+
 ![Governance Rule Creation Step 3 screenshot](images/MDC-Governance-3.jpg)
 
 ## Governance Exercise 2: See recommendations that you're the owner of
@@ -63,4 +66,5 @@ You will most likely get a popup that says **Rule created successfuly** with an 
 2. Click **Show my items only** which is found on the top right corner of the recommendations table.
 3. Select one of the recommendations that you own
 4. Remediate it.
+
 ![Governance - show owner recommendations screenshot](images/MDC-Governance-4.jpg)

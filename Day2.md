@@ -35,17 +35,18 @@ Configuring and making use of MDC and EPM.
 
 ***EPM***
 1. Identify Entra Permissions Management's Permissions Creep Index recommendations in the MDC blade
-2. Create custom policies in EPM
-3. Change permissions to follow least privilege
-4. Configure permissions on demand for the EC2 VM
-5. Configure alerts in EPM
-6. Present back to your proctor
+2. User managemnt in EPM
+3. Create custom policies in EPM
+4. Change permissions to follow least privilege
+5. Configure permissions on demand for the EC2 VM
+6. Configure alerts in EPM
+7. Present back to your proctor
 
 ### Prerequisites
 You must have completed ***most*** of the day 1 activities - AWS SSO is *optional*. which means:
 1. Connected EPM to AWS
 2. Connected MDC to AWS
-3. Onboarded your server(s) into MDC / Defender for servers
+3. Onboarded your server(s) into MDC / Defender for servers. In reality this is more important for tomorrow but if servers have not been onboarded they need to be onboarded ASAP.
 
 ### Introduction
 Day two will involve finishing the configuration of and using Entra Permissions Management (EPM) and Microsoft Defender for Cloud (MDC) which had the basic configuration on day one, including connecting to AWS.

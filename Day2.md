@@ -6,7 +6,8 @@ Times are estimates.
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome day kick-off
-| 0940 | `[LAB]` Multi-cloud CSPM with MDC
+| 0940 | Microsoft Defender for Cloud Overview and Planning
+|  | `[LAB]` Multi-cloud CSPM with MDC
 |  | `[LAB]` Custom standards and assessments
 |  | `[LAB]` Setting up governance
 | 1200 | Lunch

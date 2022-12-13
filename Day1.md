@@ -43,7 +43,7 @@ Day one is all about getting your AWS tenants and resources onboarded, so that y
      - Option B: Common Conditionl Access policies:
        - [ ] Require MFA for administrators: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa
        - [ ] Securing security info registration: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-registration
-       - [ ] Requirement: Be sure to disable Location as a condition. Users should be able to update Security Information from any location
+       - [ ] **Additional req**: Be sure to disable Location as a condition on CA002 once it got created from the template. Users should be able to update Security Information from any location
        - [ ] Require MFA for Azure management: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management
        - [ ] Block legacy authentication: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy
        - [ ] Require MFA for all users: https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa (report only)

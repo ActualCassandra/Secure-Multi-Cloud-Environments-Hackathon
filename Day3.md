@@ -53,6 +53,6 @@ Day three is around threat hunting and detection and response in MDC and Sentine
 #### Microsoft Sentinel
 1.  [Getting started with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
 2.  [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
-3. [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stetch-goals)
+3. [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stretch-goals)
 4. [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/sentinel/kusto-overview)
 5. [Must Learn KQL](https://aka.ms/mustlearnkql)

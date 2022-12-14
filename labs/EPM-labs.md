@@ -13,8 +13,8 @@ Aside from an overview of EPM, hackathon participants will be carrying out a num
 5. [Onboard an Azure subscription](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/onboard-azure)
 6. [How to create group-based permissions](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-group-based-permissions)
 7. [Just enough access policy creation / Creating a role](#procedure-create-a-custom-rolepolicy) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-role-policy)
-8. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
-9. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+8. [Rightsize permissions](#procedure-right-sizing-permissions) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-add-remove-role-task)
+9. [Permissions on Demand](EPM-labs.md#procedure-how-to-use-permissions-on-demand) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-approve-privilege-request)
 10. [Create an alert](#procedure-set-up-alerts) and [official documentation page](https://learn.microsoft.com/en-us/azure/active-directory/cloud-infrastructure-entitlement-management/how-to-create-alert-trigger)
 
 # Common Entra Permissions Management (EPM) Procedures

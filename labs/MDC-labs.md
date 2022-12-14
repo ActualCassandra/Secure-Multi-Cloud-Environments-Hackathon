@@ -193,3 +193,66 @@ You will most likely get a popup that says **Rule created successfuly** with an 
  
  Exactly the same as [Exercise 1](#governance-exercise-1-add-a-new-governance-rule-in-microsoft-defender-for-cloud), but change the details and conditions.
  
+
+# Workflow Automation
+
+## Isolate a machine impacted by ransomware
+This workflow automation will isolate a machine using Defender for Server (Microsoft Defender for Endpoint)'s machine isolation feature. For this exercise we'll be taking action based on a mimikatz alert. This example shows the power of leveraging GitHub and not 'reinventing the wheel' unless you really need to.
+
+1. You'll start by going to the main [Microsoft Defender for Cloud official GitHub Repository](https://github.com/Azure/Microsoft-Defender-for-Cloud) and deploying a [workflow automation playbook](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Workflow%20automation) into your Azure tenant. You want to use the [Isolate-MDEATPMachineAlert automation](https://github.com/Azure/Microsoft-Defender-for-Cloud/tree/main/Workflow%20automation/Isolate-MDATPMachineAlert)
+2. Click **Deploy to Azure**
+3. You may be prompted to select an account, so use the same account you've been using throughout this lab. However, if you are using PIM, please elevant first as you need rights to create the automation playbook, a logic app, and the relevant API connections. Log in with your selected account.
+4. At subsequent **Custom deployment** screen, select the appropriate subscription, region, potentially change the playbook name, and add your email address.
+![Custom playbook template deployment screenshot](images/MDC-XDR-Playbook-Customdeployment-1.jpg)
+5. Select **Review + create**, and **Create** and wait for your deployment to complete.
+6. Return to Microsoft Defender for Cloud in the portal, and select **Workflow automation** under **Management**
+7. Select **+Add Workflow automation**
+![Custom workflow automation playbook-1 screenshot](images/MDC-XDR-Automation-1.jpg)
+8. Choose a unique name, give it a useful description, choose the relevant subscription and resource group, Defender for Cloud data type should be Security alert, and enter *Mimikatz credential theft tool* in Alert name contains. Select High severity, and under Actions, find the logic app that was created when you added the custom deployment from GitHub earlier.
+![Custom workflow automation playbook-2 screenshot](images/MDC-XDR-Automation-2.jpg)
+9. Select **Create**
+10. You now need to take a look at the logic app that was deployed earlier, and finish configuring it for your environment. Go to **Logic apps** in the Azure portal, find your new logic app (that you previously selected for your playbook), and open it.
+11. Select **API connections** under **Development Tools**.
+![Logic app API connections screenshot](images/MDC-XDR-Automation-LogicApp-3.jpg)
+12. Open both connections and note their **Status**. Most likely the one referring to Microsoft Defender ATP has an *Error* status. Select **Edit API connection** under **General**.
+13. You should have a blue selection box towards the bottom labeled **Authorize**. Click it and you should get a popup asking you to sign into your account,, a Permissions Requested box. Consent and Accept - it is connecting to the API.
+14. It should return to the prior screen where you'll see Authorize successful. Click **Save** 
+![Logic app API connections 2 screenshot](images/MDC-XDR-Automation-LogicApp-4.jpg)
+The button will stay blue, but that's fine, go back to look at the API connection and you should now see the Status as Connected.
+15. That's it! You can test this automation playbook out by going into your virtual machine and attempting to download Mimikatz - please use the GitHub that will show up on an internet search. You will probably have to download multiple times and tell Windows smartscreen to keep the file anyway. When the alert appears, the logic app will be triggered and you should lose your network connection to the virtual machine.
+16. Find the machine in the security.microsoft.com portal under devices and select **Release from isolation** at the top right and you should be able to connect again.
+
+``[STRETCH GOAL]``
+
+**We can improve this logic app!** Earlier when it asked you to log in to the API - there are better ways such a using a managed identity. 
+
+1. Go back to your logic app, and select **Identity** under **Settings**
+2. Change System-Assigned to **On**
+![Logic app managed identity-1 screenshot](images/MDC-XDR-Automation-LogicApp-5.jpg)
+3. Select **Yes** at the next confirmation prompt.
+![Logic app managed identity-2 screenshot](images/MDC-XDR-Automation-LogicApp-6.jpg)
+4. Take note of the Object(principal) ID, as you'll need that for commands we'll run in cloud shell shortly.
+5. Under **Permissions** on the same screen, click **Azure role assignments**
+![Logic app managed identity-3 screenshot](images/MDC-XDR-Automation-LogicApp-7.jpg)
+6. Add a role assignment at the next screen - *Microsoft Sentinel Responder*.
+7. We now need to grant Machine.Isolate permissions to the managed identity. Run the following command in the PowerShell Azure cloud shell. If you are curious about MDEAppID, take a look at your Enterprise Applications in the Azure Portal.
+
+```
+Connect-AzureAD
+
+$MIGuid = "enter the managed identity id here"
+$MI = Get-AzureADServicePrincipal -ObjectId $MIGui
+$MDEAppId = "fc780465-2017-40d4-a0c5-307022471b92"
+$PermissionName = "Machine.Isolate"
+$MDEServicePrincipal = Get-AzureADServicePrincipal -Filter "appId eq '$MDEAppId'"
+$AppRole = $MDEServicePrincipal.AppRoles | Where-Object {$_.Value -eq $PermissionName -and $_.AllowedMemberTypes -contains "Application"}
+New-AzureAdServiceAppRoleAssignment -ObjectId $MI.ObjectId -PrincipalId $MI.ObjectId `
+-ResourceId $MDEServicePrincipal.ObjectId -Id $AppRole.Id
+```
+8. The commands should run and you'll see some green output including ObjectId, ResourceDisplayName, and PrincipalDisplayName
+9. Now go back to your logic app, select **Logic App Designer** under **Development Tools**. Look for the step *For Each* and expand it until you see an option to change the connection. Click **Change connection**
+![Logic app managed identity-4 screenshot](images/MDC-XDR-Automation-LogicApp-8.jpg)
+10. Select **Add New** and then **Connect with managed identity**, make sure the correct tenant is chosen, it is showing system-assigned managed identity, and give it a name. Click **Create**
+11. It should now show as Connected to the name you just gave it. 
+12. Click **Save* at the top and wait for the action to complete. 
+13. You're now using a managed identity to connect to the API!

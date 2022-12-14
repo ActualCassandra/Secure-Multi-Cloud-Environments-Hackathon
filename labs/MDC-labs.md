@@ -222,7 +222,7 @@ The button will stay blue, but that's fine, go back to look at the API connectio
 15. That's it! You can test this automation playbook out by going into your virtual machine and attempting to download Mimikatz - please use the GitHub that will show up on an internet search. You will probably have to download multiple times and tell Windows smartscreen to keep the file anyway. When the alert appears, the logic app will be triggered and you should lose your network connection to the virtual machine.
 16. Find the machine in the security.microsoft.com portal under devices and select **Release from isolation** at the top right and you should be able to connect again.
 
-``[STRETCH GOAL]``
+ [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stretch-goals)
 
 **We can improve this logic app!** Earlier when it asked you to log in to the API - there are better ways such a using a managed identity. 
 

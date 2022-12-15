@@ -25,16 +25,16 @@ Find and block threats in your cloud environments.
 
 1. [Create sample alerts in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alert-validation#generate-sample-security-alerts)
 2. [Generate test alerts on your server](https://docs.microsoft.com/en-us/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#send-a-test-alert)
-4. Manually trigger ransomware alerts from your VM (try and download something dodgy)
-5. [Find threats in your AWS environment using MDC](https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts)
-6. [Find threats in the M365 security portal](https://learn.microsoft.com/en-us/microsoft-365/security/defender/incident-response-overview?view=o365-worldwide)
-7. [Create a MDC workflow automation to isolate your virtual machine](https://github.com/ActualCassandra/Secure-Multi-Cloud-Environments-Hackathon/blob/main/labs/MDC-labs.md#isolate-a-machine-impacted-by-ransomware)
+3. Manually trigger ransomware alerts from your VM (try and download something dodgy)
+4. [Find threats in your AWS environment using MDC](https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts)
+5. [Find threats in the M365 security portal](https://learn.microsoft.com/en-us/microsoft-365/security/defender/incident-response-overview?view=o365-worldwide)
+6. [Create a MDC workflow automation to isolate your virtual machine](https://github.com/ActualCassandra/Secure-Multi-Cloud-Environments-Hackathon/blob/main/labs/MDC-labs.md#isolate-a-machine-impacted-by-ransomware)
   - STRETCH GOAL - improve the logic app
-9. IF YOU'VE NOT ALREADY DONE THIS - [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
-10. [Connect lab data sources into Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
-11. :timer_clock: DEPENDING ON TIME: Identity AWS-originating alerts in Microsoft Sentinel
-12. :timer_clock: DEPENDING ON TIME: Using KQL to query for AWS-related security alerts (missing SME today :( )
-13. Present back to your proctor
+7. IF YOU'VE NOT ALREADY DONE THIS - [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
+8. [Connect lab data sources into Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
+9. :timer_clock: DEPENDING ON TIME: Identity AWS-originating alerts in Microsoft Sentinel
+10. :timer_clock: DEPENDING ON TIME: Using KQL to query for AWS-related security alerts (missing SME today :( )
+11. Present back to your proctor
 
 ### Prerequisites
 You must have completed the labs from [Day 1](Day1.md), except for AWS SSO.

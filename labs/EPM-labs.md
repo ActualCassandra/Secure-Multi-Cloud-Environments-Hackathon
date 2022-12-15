@@ -136,6 +136,7 @@ This will provide Just In Time access for the requested identity to have the sel
 12. Click Submit
 
 ## Procedure: Set up Alerts
+If you want to test alerting, the easiest way will be with a permissions analytics trigger (the final procedure in this list).
 1. Navigate to Alerts > The bell icon at the top right of the window. 
 ![Alerts Screenshot](images/EPM-alerts.png)
 2. Select the Alert type: Activity, Rule-Based Anomaly, Statistical Anomaly, or Permission Analytics
@@ -167,11 +168,13 @@ Anomalies that identify activity that is unusual based on rules like first time 
 
 ### Permissions analytics alerts
 Alert to all of the risks identified in the PAR. So after you have baselined your environment, if you have a new over-permissioned user you can be alerted.
-1. Select Create Anomaly Trigger
+1. Select Create Permissions Analytics Trigger
 2. Enter a name for the alert
 3. Choose the authorisation system type the alert will apply to.
 4. Select the trigger, click Next
 5. Select the authorisation systems the alert will apply to, then click Save
+
+An easy way to test alerts is to create a trigger for inactive users or users with no MFA. In the latter instance you could create an account and not give it MFA, and you will eventually get an alert. Just remember to remove that account when done testing!
 
 ## Procedure: Create a custom role/policy
 This will create a new custom role based on the actual usage. 

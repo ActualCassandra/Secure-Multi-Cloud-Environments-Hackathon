@@ -2,11 +2,11 @@
 Sessions on day three of the Secure Multi-Cloud Environments hack around our [Imbroglio Group scenario](Scenario.md).
 
 ## Agenda
-Times are estimates.
+Times are estimates. 
 | **Time** | **Description**
 | :--- | :---
 | 0930 | Welcome and kick-off
-| 0945 | `[LAB]` Threat hunting in MDC
+| 1030 | `[LAB]` Threat hunting in MDC
 |  | `[LAB]` Threat hunting in the M365 Security Portal
 |  | `[LAB]` Workflow automation in MDC
 | 1200 | Lunch
@@ -22,20 +22,24 @@ Times are estimates.
 
 ## Day 3 Challenge
 Find and block threats in your cloud environments.
-1. Generate test alerts in the M365 security portal
-2. Create sample alerts in the MDC blade
-3. Manually trigger ransomware alerts from your VM
-4. Find threats in your AWS environment using the MDC blade
-5. Find threats in the M365 security portal
-6. Create a MDC workflow automation to isolate your virtual machine
-7. Create a Microsoft Sentinel workspace
-8. Connect lab data sources into Microsoft Sentinel
-9. :timer_clock: DEPENDING ON TIME: Identity AWS-originating alerts in Microsoft Sentinel
-10. :timer_clock: DEPENDING ON TIME: Using KQL to query for AWS-related security alerts
-11. Present back to your proctor
+
+1. [Create sample alerts in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alert-validation#generate-sample-security-alerts)
+2. [Generate test alerts on your server](https://docs.microsoft.com/en-us/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#send-a-test-alert)
+4. Manually trigger ransomware alerts from your VM (try and download something dodgy)
+5. [Find threats in your AWS environment using MDC](https://learn.microsoft.com/en-us/azure/defender-for-cloud/managing-and-responding-alerts)
+6. [Find threats in the M365 security portal](https://learn.microsoft.com/en-us/microsoft-365/security/defender/incident-response-overview?view=o365-worldwide)
+7. [Create a MDC workflow automation to isolate your virtual machine](https://github.com/ActualCassandra/Secure-Multi-Cloud-Environments-Hackathon/blob/main/labs/MDC-labs.md#isolate-a-machine-impacted-by-ransomware)
+  - STRETCH GOAL - improve the logic app
+9. IF YOU'VE NOT ALREADY DONE THIS - [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
+10. [Connect lab data sources into Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-defender-for-cloud)
+11. :timer_clock: DEPENDING ON TIME: Identity AWS-originating alerts in Microsoft Sentinel
+12. :timer_clock: DEPENDING ON TIME: Using KQL to query for AWS-related security alerts (missing SME today :( )
+13. Present back to your proctor
 
 ### Prerequisites
 You must have completed the labs from [Day 1](Day1.md), except for AWS SSO.
+
+Also, if you want to test ransomware on your virtual machine, you'll need a way to access it via RDP (but make sure the AWS security group only allows access from your IP(s)).
 
 ### Introduction
 Day three is around threat hunting and detection and response in MDC and Sentinel. Depending on Time, Sentinel may end up being optional.

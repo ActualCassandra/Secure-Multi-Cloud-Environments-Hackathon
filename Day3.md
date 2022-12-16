@@ -50,13 +50,16 @@ Day three is around threat hunting and detection and response in MDC and Sentine
 #### Microsoft Defender for Cloud (MDC)
 1. [Workflow automation in MDC](https://docs.microsoft.com/en-us/azure/defender-for-cloud/workflow-automation))
 2. [Alert validation in Microsoft Defender for Cloud-Create Sample alerts](https://docs.microsoft.com/en-us/azure/defender-for-cloud/alert-validation#generate-sample-security-alerts)
+3. [Defender for Cloud ninja training](https://aka.ms/ascninja)
 
 #### Microsoft Defender for Endpoint (MDE)
 1. [Generate test alerts on server in MDE](https://docs.microsoft.com/en-us/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#send-a-test-alert)
 
 #### Microsoft Sentinel
-1.  [Getting started with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
-2.  [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
-3. [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stretch-goals)
-4. [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/sentinel/kusto-overview)
-5. [Must Learn KQL](https://aka.ms/mustlearnkql)
+1.  [Azure Sentinel Training Lab](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Training/Azure-Sentinel-Training-Lab)
+2.  [Microsoft Sentinel Ninja training](https://aka.ms/sentinelninja)
+3.  [Getting started with Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
+4.  [Create a Microsoft Sentinel workspace](https://learn.microsoft.com/en-us/training/modules/create-manage-azure-sentinel-workspaces/3-create-azure-sentinel-workspace)
+5. [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stretch-goals)
+6. [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/sentinel/kusto-overview)
+7. [Must Learn KQL](https://aka.ms/mustlearnkql)

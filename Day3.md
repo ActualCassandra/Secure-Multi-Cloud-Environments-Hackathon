@@ -63,3 +63,5 @@ Day three is around threat hunting and detection and response in MDC and Sentine
 5. [AWS S3 Connector](https://docs.microsoft.com/en-us/azure/sentinel/connect-aws?tabs=s3) [![](https://img.shields.io/badge/-STRETCH%20GOAL-important?style=flat)](#stretch-goals)
 6. [Kusto Query Language (KQL)](https://learn.microsoft.com/en-us/azure/sentinel/kusto-overview)
 7. [Must Learn KQL](https://aka.ms/mustlearnkql)
+8.AI and automation: [STAT](https://github.com/briandelmsft/SentinelAutomationModules) and [github repo](https://github.com/SCStelz)
+9. [Lets automate your SOC](https://azurecloudai.blog/2023/02/13/lets-automate-your-soc/)
